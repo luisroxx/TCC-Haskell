@@ -14,4 +14,5 @@ Technologias utilizadas no projeto: C++ para o arduino, Haskell (usando a framew
 ## Autores
 
 Luis Guilherme da Costa Martins
+
 Pedro Paulo Miranda Souza
