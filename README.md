@@ -8,3 +8,5 @@ Primeiramente é feito a captação do consumo de energia elétrica de um ambien
 na nuvem onde ficam armazenados os dados de consumo do usuário. 
 
 O usuário pode, através de um website, visualizar gráficos que permitem ver a quantidade de energia elétrica (em Kwh) ele consumiu diariamente, mensalmente ou anualmente. O site também calcula o gasto que o usuário teve durante o período.
+
+Technologias utilizadas no projeto: C++ para o arduino, Haskell (usando a framework Yesod) para o Website e banco de dados PostGreSQL.
