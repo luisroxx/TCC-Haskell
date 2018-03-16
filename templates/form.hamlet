@@ -1,0 +1,12 @@
+<div .container>
+    <div .row>
+        <div .col-sm-3>
+         
+        <div .col-sm-6>
+                  <div .form-group>
+                    <h2 .form-signin-heading>Login:
+                    <form .form-horizontal role=form method=post action=@{x} enctype=#{enctype}>
+                        <div .form-group> 
+                            ^{widget}
+                        <button .btn .btn-lg .btn-primary .btn-block>Sign in
+        <div .col-sm-3>

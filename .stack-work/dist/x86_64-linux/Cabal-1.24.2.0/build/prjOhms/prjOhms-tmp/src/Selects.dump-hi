@@ -1,0 +1,3074 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-26 04:30:28.312543 UTC
+
+interface main@main:Selects 8002
+  interface hash: 6b9ddcf39e0eaa8a45e13c9454a86f64
+  ABI hash: 978af8e38ae6931909f437bc61ff4d2e
+  export-list hash: 92f002f8faf1866ed3600d46e37b240f
+  orphan hash: 22991ce9de7cd4c703916b4584e21d7b
+  flag hash: e834d9bb7ec70ce51bbf198d80994c76
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Selects.getDate
+  Selects.getMonth
+  Selects.pegaConsumo
+  Selects.pegaConsumoAno
+  Selects.pegaConsumoMes
+  Selects.selectCasaId
+  Selects.selectConsumoAmbiente
+  Selects.selectConsumoAmbienteAno
+  Selects.selectConsumoAmbienteDia
+  Selects.selectConsumoAmbienteMes
+  Selects.selectConsumoAmbienteMesQual
+  Selects.selectConsumoAmbientePeriodo
+  Selects.selectConsumoAmbienteSemana
+  Selects.selectConsumoCasa
+  Selects.selectConsumoCasaAno
+  Selects.selectConsumoCasaDia
+  Selects.selectConsumoCasaMes
+  Selects.selectConsumoCasaMesQual
+  Selects.selectConsumoCasaPeriodo
+  Selects.selectConsumoCasaSemana
+  Selects.selectPreco
+module dependencies: Foundation
+package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-DDov2e1Yemt94DudUvTLYZ
+                      aeson-compat-0.3.6@aeson-compat-0.3.6-2DGXsEffmptCnWvZsLNGWu
+                      ansi-terminal-0.6.2.3@ansi-terminal-0.6.2.3-4HPxin1iv6RAndS8lH3nzo
+                      appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-HhuV3U7exg79UmloYn3kX2
+                      attoparsec-iso8601-1.0.0.0@attoparsec-iso8601-1.0.0.0-HsZBRE01qJxJ1MwODysbnY
+                      auto-update-0.1.4@auto-update-0.1.4-EmUvNdmhEju51bHrtaEMpz
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-KeJp8zYMpcS9WibvTcxU22
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-CGB8BvrFgghHy5bLy0SFOg
+                      blaze-html-0.8.1.3@blaze-html-0.8.1.3-4x5sR7CihaZBuBa398ibiy
+                      blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT
+                      byteable-0.1.1@byteable-0.1.1-2lU1pexQSLj1KbNO17UifQ
+                      byteorder-1.0.4@byteorder-1.0.4-9NlNHkBVdo7F1prFVKrkcH
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.9@case-insensitive-1.2.0.9-DO0AWfy7hdR2nQUG46ef58
+                      cereal-0.5.4.0@cereal-0.5.4.0-BsAGxfp8yAs3CiRo2E875e
+                      cipher-aes-0.2.11@cipher-aes-0.2.11-3bgwrLYUdx3AMYHUPuxu87
+                      clientsession-0.9.1.2@clientsession-0.9.1.2-KRcVaZxQ84gBM2BKF2NUTQ
+                      conduit-1.2.10@conduit-1.2.10-GgLn1U1QYcf9wsQecuZ1A4
+                      conduit-extra-1.1.15@conduit-extra-1.1.15-8sHNT28fM12994kb54uPaH
+                      containers-0.5.7.1@containers-0.5.7.1
+                      cookie-0.4.2.1@cookie-0.4.2.1-K68NuFIZ07nEstxwB6c3aL
+                      cprng-aes-0.6.1@cprng-aes-0.6.1-9Ysh71z5FLmK1QfZUn0KHr
+                      crypto-api-0.13.2@crypto-api-0.13.2-IETueZuD8kB6D6D3e0Qo1q
+                      crypto-cipher-types-0.0.9@crypto-cipher-types-0.0.9-2naOMJ2jnvG5GhEt4Ao7bp
+                      crypto-random-0.0.9@crypto-random-0.0.9-AoGITFIsDYP2IQzwS9RQF8
+                      cryptohash-0.11.9@cryptohash-0.11.9-AwRqZE0EZ5i8pER7MJsLoX
+                      cryptohash-conduit-0.1.1@cryptohash-conduit-0.1.1-DQeBh2BGjiJ2aigRmOz6SM
+                      cryptonite-0.21@cryptonite-0.21-47iYBNmsFlII2FZyak8KXj
+                      css-text-0.1.2.2@css-text-0.1.2.2-H2nzLAF8Lvh29Ya09mQHei
+                      data-default-0.7.1.1@data-default-0.7.1.1-7EGYJX2YWqWJRbPFUHNoCr
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK
+                      data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-FKnZBeovJMk4M89wQxDhjl
+                      data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      deepseq-generics-0.2.0.0@deepseq-generics-0.2.0.0-IjS8Jfo7YCzLKpV8N96gbz
+                      directory-1.3.0.0@directory-1.3.0.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD
+                      easy-file-0.2.1@easy-file-0.2.1-rguMBNaECxLikt4CCDx0D
+                      email-validate-2.2.0@email-validate-2.2.0-Dk37llbyP6jDId6o9ZMdq5
+                      entropy-0.3.7@entropy-0.3.7-GVoReSVE1cZ4Y1pKgzhBYO
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fast-logger-2.4.10@fast-logger-2.4.10-AASpkRsupvWAQEpNM5DQI
+                      file-embed-0.0.10@file-embed-0.0.10-KWMmUDaNSRP7AxWSEHlrrK
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x
+                      http-api-data-0.3.7@http-api-data-0.3.7-Fjq248miKA8D5hFdZGD7aB
+                      http-date-0.0.6.1@http-date-0.0.6.1-DIpeM7nOKwq7aBmb5ryU4N
+                      http-types-0.9.1@http-types-0.9.1-AUkzzKpOoLmKIvDSpmjcFz
+                      http2-1.6.3@http2-1.6.3-AntBmJg95Sg1Na7lIPgyhO integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.1@integer-logarithms-1.0.1-IEHCuEd5sG4JjSjlx7m5JF
+                      iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4
+                      lifted-base-0.2.3.10@lifted-base-0.2.3.10-BoEavBFIcriDza63doCjS2
+                      memory-0.14.3@memory-0.14.3-HxN2RgwYLqT3iHrmHIXRUq
+                      mime-types-0.1.0.7@mime-types-0.1.0.7-31dnC2ifQ9r5TApUZagLPk
+                      mmorph-1.0.9@mmorph-1.0.9-5bASEvmIkr5CpdAYXwPsn0
+                      monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5
+                      monad-logger-0.3.22@monad-logger-0.3.22-Ff8c9txl6qcL0x0EY6ih77
+                      monad-loops-0.4.3@monad-loops-0.4.3-ERCN4ZKCeeS5SRhwqXsLBP
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      mwc-random-0.13.5.0@mwc-random-0.13.5.0-Dp3Ri46ZxJuCFZWIowNqha
+                      network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe
+                      network-uri-2.6.1.0@network-uri-2.6.1.0-EwGrJ9bdUqR1E7dAIJ4cwF
+                      old-locale-1.0.0.7@old-locale-1.0.0.7-KGBP1BSKxH5GCm0LnZP04j
+                      old-time-1.1.0.3@old-time-1.1.0.3-KWRsMSdY26c2L27Y9n9cyq
+                      parsec-3.1.11@parsec-3.1.11-113irVHGgd88sRnywByDNw
+                      path-pieces-0.2.1@path-pieces-0.2.1-7jYjtDsNHN0JfYriIYgB3j
+                      persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy
+                      persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-8UEoLIijY1BB8D8YolPhem
+                      persistent-template-2.5.2@persistent-template-2.5.2-BHHn8Q2FqmqDselnduIEAC
+                      postgresql-libpq-0.9.3.0@postgresql-libpq-0.9.3.0-FVKnfWO5tn29L1HQjaQ0as
+                      postgresql-simple-0.5.2.1@postgresql-simple-0.5.2.1-7l6cEp6CJ0z95XHG51qnvo
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      process-1.4.3.0@process-1.4.3.0
+                      psqueues-0.2.2.3@psqueues-0.2.2.3-9nDehYbroydEusqdFJopTa
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      resource-pool-0.2.3.2@resource-pool-0.2.3.2-1AOSrWwsk6kGNVrZRdikMV
+                      resourcet-1.1.9@resourcet-1.1.9-Ej57FoSD8NQLck5u9CwWz8
+                      safe-0.3.14@safe-0.3.14-GsbXn9D9F3BDazVNcErzdQ
+                      scientific-0.3.4.12@scientific-0.3.4.12-J9HRl69dpDBBzAMKxlfkoh
+                      securemem-0.1.9@securemem-0.1.9-8Xi2wNoj8BIHAoMFWnW1JR
+                      shakespeare-2.0.13@shakespeare-2.0.13-1UUIku9jrJBLBXC3oDLYXd
+                      silently-1.2.5@silently-1.2.5-HsbqnAAyIOA8viZ4Sccs0a
+                      simple-sendfile-0.2.25@simple-sendfile-0.2.25-JJ9zm1wZxYIARxlVa3oQgs
+                      skein-1.0.9.4@skein-1.0.9.4-1r9hT02ZzU5HeQ9SvXvQV
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      stm-chans-3.0.0.4@stm-chans-3.0.0.4-JX6Y7GVvdkg3BduVhEnPWu
+                      streaming-commons-0.1.17@streaming-commons-0.1.17-pXxQEId7Ie1SLoOLcDazB
+                      stringsearch-0.3.6.6@stringsearch-0.3.6.6-2soGORichTR6reHVhDqKip
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tagsoup-0.14.1@tagsoup-0.14.1-6d5jSu6VuYIIoyQixz5L7u
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-GKSs0LKukAL8ymq2naFmrH
+                      unix-2.7.2.1@unix-2.7.2.1
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-Ausmw6d7KIwA7sl52mzqxC
+                      unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o
+                      utf8-string-1.0.1.1@utf8-string-1.0.1.1-1DpjxLeTvGg7ttZZojxJR5
+                      uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl
+                      vault-0.3.0.7@vault-0.3.0.7-HJSJzPTOq6IJLrOGPrOio
+                      vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
+                      wai-3.2.1.1@wai-3.2.1.1-H6cJdoNnPqk1Ch333qtaPo
+                      wai-app-static-3.1.6.1@wai-app-static-3.1.6.1-2rsQ1EVge26CO53M4gLdkE
+                      wai-extra-3.0.19.1@wai-extra-3.0.19.1-3in25hi26fo3ynYVCgt8Z3
+                      wai-logger-2.3.0@wai-logger-2.3.0-EYYpHmikC5d8pavu5CHXnD
+                      warp-3.2.11.2@warp-3.2.11.2-EncNvviAzZWHK6yVvhIgD5
+                      word8-0.1.2@word8-0.1.2-9WDPGCTpW7JJnsiAQavtd1
+                      xss-sanitize-0.3.5.7@xss-sanitize-0.3.5.7-9L4rIyhZC8H6IVBX0SpXFc
+                      yesod-1.4.5@yesod-1.4.5-Gjjcx4wipmk9Grx3eCz8hV
+                      yesod-core-1.4.33@yesod-core-1.4.33-8AMCPxWRGte91vFglpHrX8
+                      yesod-form-1.4.11@yesod-form-1.4.11-AYu9ZrsCoZVGuJCtTIMeFI
+                      yesod-persistent-1.4.2@yesod-persistent-1.4.2-FOVEW0FUJLsHmVFGlu8EFf
+                      yesod-static-1.5.2@yesod-static-1.5.2-5JxqasNDKv61u38MfmOKcf
+                      zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HhuV3U7exg79UmloYn3kX2:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-HhuV3U7exg79UmloYn3kX2:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         crypto-api-0.13.2@crypto-api-0.13.2-IETueZuD8kB6D6D3e0Qo1q:Crypto.Classes
+         data-default-instances-containers-0.0.1@data-default-instances-containers-0.0.1-bob6IQGdJq92c061H46zK:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1@data-default-instances-dlist-0.0.1-FKnZBeovJMk4M89wQxDhjl:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l:Data.Default.Instances.OldLocale
+         hashable-1.2.6.0@hashable-1.2.6.0-3EXxoqeEgbfAKr6aGkye6x:Data.Hashable.Generic
+         network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket
+         persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist.Sql.Orphan.PersistStore
+         persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist.Sql.Orphan.PersistUnique
+         persistent-template-2.5.2@persistent-template-2.5.2-BHHn8Q2FqmqDselnduIEAC:Database.Persist.TH
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE:Data.UnixTime.Diff
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HhuV3U7exg79UmloYn3kX2:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         conduit-1.2.10@conduit-1.2.10-GgLn1U1QYcf9wsQecuZ1A4:Data.Conduit.Internal.Conduit
+                         conduit-1.2.10@conduit-1.2.10-GgLn1U1QYcf9wsQecuZ1A4:Data.Conduit.Internal.Pipe
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD:Data.DList
+                         email-validate-2.2.0@email-validate-2.2.0-Dk37llbyP6jDId6o9ZMdq5:Text.Email.Parser
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Array.Bitmap
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Array.Boxed
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Array.Unboxed
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Collection.Buildable
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Collection.Collection
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Collection.Element
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Collection.Keyed
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Collection.Mutable
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Numerical.Subtractive
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Primitive.Monad
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Primitive.Types.OffsetSize
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.String.Encoding.ASCII7
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.String.Encoding.ISO_8859_1
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.String.Encoding.UTF16
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.String.Encoding.UTF32
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.String.UTF8
+                         foundation-0.0.7@foundation-0.0.7-DAnbpeCletfE8qJLMJmu5X:Foundation.Tuple
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Addr
+                         iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Range
+                         main@main:Foundation
+                         monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5:Control.Monad.Trans.Control
+                         monad-logger-0.3.22@monad-logger-0.3.22-Ff8c9txl6qcL0x0EY6ih77:Control.Monad.Logger
+                         mwc-random-0.13.5.0@mwc-random-0.13.5.0-Dp3Ri46ZxJuCFZWIowNqha:System.Random.MWC
+                         network-uri-2.6.1.0@network-uri-2.6.1.0-EwGrJ9bdUqR1E7dAIJ4cwF:Network.URI
+                         persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist.Class.PersistConfig
+                         persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist.Sql.Orphan.PersistStore
+                         persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist.Sql.Types.Internal
+                         persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-8UEoLIijY1BB8D8YolPhem:Database.Persist.Postgresql
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         resourcet-1.1.9@resourcet-1.1.9-Ej57FoSD8NQLck5u9CwWz8:Control.Monad.Trans.Resource.Internal
+                         shakespeare-2.0.13@shakespeare-2.0.13-1UUIku9jrJBLBXC3oDLYXd:Text.Internal.Css
+                         shakespeare-2.0.13@shakespeare-2.0.13-1UUIku9jrJBLBXC3oDLYXd:Text.Shakespeare
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-1XEErQCPPPc2SEtcHHNx9o:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-29hQYgnErrj49JbrlmjGHl:Data.UUID.Types.Internal.Builder
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Unboxed.Base
+                         yesod-core-1.4.33@yesod-core-1.4.33-8AMCPxWRGte91vFglpHrX8:Yesod.Core.Class.Handler
+                         yesod-core-1.4.33@yesod-core-1.4.33-8AMCPxWRGte91vFglpHrX8:Yesod.Core.Internal.LiteApp
+                         yesod-core-1.4.33@yesod-core-1.4.33-8AMCPxWRGte91vFglpHrX8:Yesod.Core.Types
+                         yesod-static-1.5.2@yesod-static-1.5.2-5JxqasNDKv61u38MfmOKcf:Yesod.Static
+                         zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
+import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  http-types-0.9.1@http-types-0.9.1-AUkzzKpOoLmKIvDSpmjcFz:Network.HTTP.Types.Status 4962d52027e53ce7687f8d0d521973b0
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  Foundation 70d3a614ca82d5aabe2171ac3990ea13
+  exports: 8f6b8a63dba0a880080c30d96ccde8e9
+  AmbienteCasaId 4fc83013b827b9d989cb3c46bccb67d1
+  AmbienteId aafe7ed578ae13168b278d802125ce21
+  CasaId 0e059310a9d1b52fe24c86f2d11c58ea
+  Consumo d1bf7efafc3a2efaa4145a66341ceb78
+  ConsumoAmbienteId e4b0f14a4ef451fee80181be2ab010d3
+  ConsumoDtConsumo d1581fc5784ba11d422928a8c30f4d39
+  Handler 91ddd9836426805880f998d44c430e68
+  PrecoId e2b1ecb6711ed2fa76eba9dd0465fa09
+  UsuarioNmUsuario 57de5aaf7e9d2d0f3b369ff33c6f3386
+  consumoDtConsumo c1699eecc9645c558837f2fbf4dd99dd
+  consumoQtConsumo 0876c60b48fd0364565da03d167e3b12
+  precoQtPreco d2e78933fcc8548c56bf63f7a8c0854f
+  usuarioCasaId 4193e4780b07203bf1d4b96a8b6448cb
+import  -/  monad-logger-0.3.22@monad-logger-0.3.22-Ff8c9txl6qcL0x0EY6ih77:Control.Monad.Logger c186132138b23c0e4c9839f4d7247bee
+import  -/  persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist 0cd095f1f9ea2d6556721f74560e33a4
+import  -/  persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist.Class.PersistEntity 2dfa7e1527d6a9f72c2e7017cee17d47
+import  -/  persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist.Class.PersistQuery 876fe93620908107224b47244ae2dedc
+import  -/  persistent-2.6.1@persistent-2.6.1-GN6JgXR46m4BfSXz1mIhIy:Database.Persist.Sql.Orphan.PersistStore 6f9f1429047859ebdc17d6fe5c84a59b
+import  -/  persistent-postgresql-2.6.1@persistent-postgresql-2.6.1-8UEoLIijY1BB8D8YolPhem:Database.Persist.Postgresql 326569900059893a227843896529734d
+import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text 9ba4693a108b74a0b1eb8f7d38f1abee
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar bd15013b1ee55495227e28faaf2d77db
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Days 0625fb086700e00eeabe68d7be3fc9e6
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian 04a8b2fb0c663c25de5cf9d7024d8458
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock 497255c34b71ccfa0ab1bf8f9ae56005
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock.POSIX d107248af877060d00321d9c66f5a2b1
+import  -/  time-1.6.0.1@time-1.6.0.1:Data.Time.Clock.UTC a11128e40404d4167f29d45f57b1b0af
+import  -/  yesod-1.4.5@yesod-1.4.5-Gjjcx4wipmk9Grx3eCz8hV:Yesod 9b32a342acc9baee13df0be07e3d39c5
+import  -/  yesod-core-1.4.33@yesod-core-1.4.33-8AMCPxWRGte91vFglpHrX8:Yesod.Core.Handler fb74858425a74dc2ac28440095be4990
+import  -/  yesod-persistent-1.4.2@yesod-persistent-1.4.2-FOVEW0FUJLsHmVFGlu8EFf:Yesod.Persist.Core 39014f6db198f5fe2002eb686b30660e
+addDependentFile "/home/ubuntu/.stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+ee8ce168d3de5cfceb4e04371e547f2b
+  $s$WAmbienteCasaId2 ::
+    Database.Persist.Class.PersistEntity.Key Foundation.Casa
+    GHC.Types.~~ Database.Persist.Class.PersistEntity.Key
+                   Foundation.Casa
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Casa)
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Casa)
+                   @~ <Database.Persist.Class.PersistEntity.Key Foundation.Casa>_N) -}
+185cf60f9b42f09f9339cfe806e3a54b
+  $s$WConsumoAmbienteId2 ::
+    Database.Persist.Class.PersistEntity.Key Foundation.Ambiente
+    GHC.Types.~~ Database.Persist.Class.PersistEntity.Key
+                   Foundation.Ambiente
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Ambiente)
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Ambiente)
+                   @~ <Database.Persist.Class.PersistEntity.Key
+                         Foundation.Ambiente>_N) -}
+d798d1733e73778dee7e21e597333b3f
+  $s$WConsumoDtConsumo2 ::
+    Data.Time.Calendar.Days.Day
+    GHC.Types.~~ Data.Time.Calendar.Days.Day
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Data.Time.Calendar.Days.Day
+                   @ Data.Time.Calendar.Days.Day
+                   @~ <Data.Time.Calendar.Days.Day>_N) -}
+274b8a69b865821db8a15512b7d87a3e
+  $s$WUsuarioNmUsuario2 ::
+    Data.Text.Internal.Text GHC.Types.~~ Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Data.Text.Internal.Text
+                   @ Data.Text.Internal.Text
+                   @~ <Data.Text.Internal.Text>_N) -}
+84cc27e26a4132e55ec4ff4fb563b85b
+  $s$fApplicativeHandlerT_$creturn ::
+    a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ site
+                   @ a
+                   (eta :: a)
+                   (eta1 :: Yesod.Core.Types.HandlerData
+                              site (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.Base.returnIO @ a eta) `cast` (GHC.Types.N:IO[0] <a>_R) eta2)
+                  `cast`
+                (forall (site :: <*>_N) (a :: <*>_N).
+                 <a>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              site (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <site>_N <GHC.Types.IO>_N <a>_N))) -}
+5440ca198515cb5df7a5387b9e998b91
+  $s$fMonadHandlerHandlerT ::
+    Yesod.Core.Class.Handler.MonadHandler
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cp1MonadHandler
+                     @ GHC.Types.IO
+                     @ site
+                     Selects.$s$fMonadHandlerHandlerT_$d(%,,,,%))
+                  (Yesod.Core.Class.Handler.$fMonadHandlerHandlerT_$cliftHandlerT
+                     @ GHC.Types.IO
+                     @ site
+                     Selects.$s$fMonadHandlerHandlerT_$d(%,,,,%)) -}
+acee5d274110275d19a7b0781483fd64
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT ::
+    GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Yesod.Core.Types.$fMonadHandlerT_$cp1Monad
+                     @ GHC.Types.IO
+                     @ site
+                     GHC.Base.$fMonadIO)
+                  (Yesod.Core.Types.$fMonadHandlerT_$c>>=
+                     @ GHC.Types.IO
+                     @ site
+                     GHC.Base.$fMonadIO)
+                  (Yesod.Core.Types.$fMonadHandlerT_$c>>
+                     @ GHC.Types.IO
+                     @ site
+                     GHC.Base.$fMonadIO)
+                  (Selects.$s$fApplicativeHandlerT_$creturn @ site)
+                  (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail
+                     @ site) -}
+74b6e08f5284c3f1b24784452bb4ac28
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail ::
+    GHC.Base.String -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 1, Strictness: <B,U>x,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ site @ a (eta :: GHC.Base.String) ->
+                 Yesod.Core.Types.$fMonadHandlerT1
+                   @ site
+                   @ GHC.Types.IO
+                   @ a
+                   GHC.Base.$fMonadIO
+                   eta) -}
+d105be571a7ef9414a227e781e51294b
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT ::
+    Control.Monad.IO.Class.MonadIO
+      (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ site.
+                  @ (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+                  (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger
+                     @ site)
+                  (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO
+                     @ site) -}
+801b26349593e37f46e33309627c28fd
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO ::
+    GHC.Types.IO a -> Yesod.Core.Types.HandlerT site GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ site @ a (eta :: GHC.Types.IO a) ->
+                 let {
+                   eta1 :: GHC.Types.IO a = GHC.Base.id @ (GHC.Types.IO a) eta
+                 } in
+                 (\ (ds :: Yesod.Core.Types.HandlerData
+                             site (Yesod.Core.Types.MonadRoute GHC.Types.IO)) ->
+                  eta1)
+                   `cast`
+                 (Sym (Yesod.Core.Types.N:HandlerT[0]
+                           <site>_N <GHC.Types.IO>_N <a>_N))) -}
+2b9e616633ef87f0700b775b26694495
+  $s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger ::
+    GHC.Base.Monad (Yesod.Core.Types.HandlerT site GHC.Types.IO)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT -}
+529d651c22e7c5b0ae56b7c6e6d8c39a
+  $s$fMonadHandlerHandlerT_$d(%,,,,%) ::
+    Control.Monad.Trans.Resource.MonadResourceBase GHC.Types.IO
+  {- Strictness: m,
+     Unfolding: ((Control.Monad.Trans.Control.$fMonadBaseControlIOIO,
+                  Control.Monad.Catch.$fMonadThrowIO,
+                  Control.Monad.Base.$fMonadBaseIOIO,
+                  Control.Monad.IO.Class.$fMonadIOIO, GHC.Base.$fApplicativeIO)) -}
+787495360de5e4697b44ce941a880691
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Selects.$trModule2
+                   Selects.$trModule1) -}
+94ffc9a25b768bab3fe54e0dd3601de6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Selects"#) -}
+71519de65f9b9a89a61bd41d73b55fa9
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+3de4430ca79fb815890457235b3f6246
+  $wgo ::
+    [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+    -> GHC.Prim.Double# -> GHC.Prim.Double#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+16e6c39a3c5d93b31c64f951944a6336
+  $wgo1 ::
+    [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+    -> GHC.Prim.Double# -> GHC.Prim.Double#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+06bfc421136e7f6e516c35da4452a7f7
+  $wgo2 ::
+    [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+    -> GHC.Prim.Double# -> GHC.Prim.Double#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+0396b1e7c42aa98a0bcbb9175d3ffd8b
+  $wgo3 :: [GHC.Types.Double] -> GHC.Prim.Double# -> GHC.Prim.Double#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+8fee55755871a561bc4bdb16d38e3ce5
+  $wpegaConsumoAno ::
+    [[Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]]
+    -> [(GHC.Types.Double, GHC.Types.Int)]
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+799075f53897463bff12034628cab99e
+  getDate ::
+    Data.Time.Calendar.Days.Day
+    -> (GHC.Integer.Type.Integer, GHC.Types.Int, GHC.Types.Int)
+  {- Arity: 1, Strictness: <L,1*U>m,
+     Unfolding: InlineRule (0, True, True)
+                Data.Time.Calendar.Gregorian.toGregorian -}
+796d880ca5589197f8ca752fc59ef48d
+  getMonth ::
+    (GHC.Integer.Type.Integer, GHC.Types.Int, GHC.Types.Int)
+    -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: (GHC.Integer.Type.Integer, GHC.Types.Int,
+                           GHC.Types.Int)) ->
+                 case ds of wild { (,,) ds1 mes ds2 -> mes }) -}
+78baa8a10b707c53cf43d4b5b54fa0de
+  pegaConsumo ::
+    [[Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]]
+    -> [GHC.Types.Double]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+cdcbb2e168fc1db8a8c2c89f97f10ebc
+  pegaConsumoAno ::
+    GHC.Integer.Type.Integer
+    -> [[Database.Persist.Class.PersistEntity.Entity
+           Foundation.Consumo]]
+    -> [(GHC.Types.Double, GHC.Types.Int)]
+  {- Arity: 2, Strictness: <L,A><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ (w :: GHC.Integer.Type.Integer)
+                   (w1 :: [[Database.Persist.Class.PersistEntity.Entity
+                              Foundation.Consumo]]) ->
+                 Selects.$wpegaConsumoAno w1) -}
+767bf50c926353ae88d2555a6c952b90
+  pegaConsumoMes ::
+    [[Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]]
+    -> [(GHC.Types.Double, Data.Time.Calendar.Days.Day)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+b8a36a6b95909752f05493660aaa6ca8
+  selectCasaId :: Foundation.Handler Foundation.CasaId
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectCasaId1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0] <Foundation.CasaId>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.Sitio>_N <GHC.Types.IO>_N <Foundation.CasaId>_N))) -}
+a0f366e67abbe2d28ab431e74cd96bf0
+  selectCasaId1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Foundation.CasaId #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (r :: Yesod.Core.Types.HandlerData
+                           Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Selects.selectCasaId_m1
+                         `cast`
+                       (Yesod.Core.Types.N:HandlerT[0]
+                            <Foundation.Sitio>_N
+                            <GHC.Types.IO>_N
+                            <GHC.Base.Maybe Data.ByteString.Internal.ByteString>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <GHC.Base.Maybe Data.ByteString.Internal.ByteString>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 Selects.selectCasaId2
+                   (case ipv1 of wild {
+                      GHC.Base.Nothing -> GHC.Base.Nothing @ Data.Text.Internal.Text
+                      GHC.Base.Just x
+                      -> GHC.Base.Just
+                           @ Data.Text.Internal.Text
+                           (case x of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                            Data.Text.Encoding.$wdecodeUtf8With
+                              Data.Text.Encoding.Error.lenientDecode
+                              ww1
+                              ww2
+                              ww3
+                              ww4 }) })
+                   r
+                   ipv }) -}
+1aea72654a99208c18836485741ad56f
+  selectCasaId2 ::
+    GHC.Base.Maybe Data.Text.Internal.Text
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Foundation.CasaId #)
+  {- Arity: 3, Strictness: <L,1*U><L,U><S,U>,
+     Unfolding: (\ (username :: GHC.Base.Maybe Data.Text.Internal.Text)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Usuario
+                       @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Selects.selectCasaId5
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Usuario>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendUsuario[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.Sitio)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Usuario)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Usuario
+                             @ Data.Text.Internal.Text
+                             Database.Persist.Class.PersistField.$fPersistFieldText0
+                             Selects.selectCasaId4
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldUsuariotyp0[0]) <Data.Text.Internal.Text>_N)
+                             (Data.Either.Left
+                                @ Data.Text.Internal.Text
+                                @ [Data.Text.Internal.Text]
+                                (Data.Maybe.fromJust @ Data.Text.Internal.Text username))
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.[]
+                             @ (Database.Persist.Class.PersistEntity.Filter
+                                  Foundation.Usuario)))
+                       Selects.selectCasaId3
+                 } in
+                 case Foundation.$fYesodPersistSitio1
+                        @ (GHC.Base.Maybe
+                             (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario))
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds :: Yesod.Core.Types.HandlerT
+                                   Foundation.Sitio
+                                   GHC.Types.IO
+                                   (Data.Acquire.Internal.Acquire
+                                      (Data.Conduit.Internal.Conduit.Source
+                                         GHC.Types.IO
+                                         (Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Usuario)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Usuario))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.Sitio>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Usuario))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Usuario))>_R)
+                                 s of ds1 { (#,#) ipv ipv1 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario))
+                             @ (GHC.Base.Maybe
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario))
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv1
+                             (Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend1
+                                @ Foundation.Usuario)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Usuario)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <GHC.Base.Maybe
+                                               (Database.Persist.Class.PersistEntity.Entity
+                                                  Foundation.Usuario)>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <GHC.Base.Maybe
+                                  (Database.Persist.Class.PersistEntity.Entity
+                                     Foundation.Usuario)>_R)
+                            ipv })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <GHC.Base.Maybe
+                                                (Database.Persist.Class.PersistEntity.Entity
+                                                   Foundation.Usuario)>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.Sitio>_N
+                                        <GHC.Types.IO>_N
+                                        <GHC.Base.Maybe
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Usuario)>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <GHC.Base.Maybe
+                                     (Database.Persist.Class.PersistEntity.Entity
+                                        Foundation.Usuario)>_N))
+                        eta
+                        eta1 of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    case ipv1 of wild {
+                      GHC.Base.Nothing
+                      -> Data.Maybe.fromJust1
+                           @ (Database.Persist.Class.PersistEntity.Key Foundation.Casa)
+                      GHC.Base.Just x
+                      -> case x of wild1 { Database.Persist.Class.PersistEntity.Entity $dPersistEntity ds2 ds3 ->
+                         case ds3 of wild2 { Foundation.Usuario ds4 ds5 dt ds6 ->
+                         ds6 } } } #) }) -}
+a7dfb0efbbfb6dc0700397f39d6b17c9
+  selectCasaId3 ::
+    [Database.Persist.Class.PersistEntity.SelectOpt Foundation.Usuario]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (Database.Persist.Class.PersistEntity.SelectOpt
+                        Foundation.Usuario)
+                   (Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend5
+                      @ Foundation.Usuario)
+                   (GHC.Types.[]
+                      @ (Database.Persist.Class.PersistEntity.SelectOpt
+                           Foundation.Usuario))) -}
+ce78716537b5f067f06f44955e71c76c
+  selectCasaId4 ::
+    Foundation.R:EntityFieldUsuariotyp Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Foundation.UsuarioNmUsuario
+                   @ Data.Text.Internal.Text
+                   Selects.$s$WUsuarioNmUsuario2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Data.Text.Internal.Text>_N <Data.Text.Internal.Text>_N)) -}
+01eb0766f3cdc546bdcbc000cd972f03
+  selectCasaId5 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.Usuario,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fPersistEntityUsuario,
+                  Selects.selectCasaId6
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+bba8380d1f9291df4d204b5e7daf4647
+  selectCasaId6 ::
+    Database.Persist.Sql.Types.Internal.SqlBackend
+    GHC.Types.~~ Database.Persist.Sql.Types.Internal.SqlBackend
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @ Database.Persist.Sql.Types.Internal.SqlBackend
+                   @~ <Database.Persist.Sql.Types.Internal.SqlBackend>_N) -}
+c5faa4c0933bce8f7e5e40fd4950e1e8
+  selectCasaId7 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "_USER"#) -}
+13c843f6889670eedd8e6f11b59a2e9c
+  selectCasaId_m1 ::
+    Yesod.Core.Types.HandlerT
+      Foundation.Sitio
+      GHC.Types.IO
+      (GHC.Base.Maybe Data.ByteString.Internal.ByteString)
+  {- Unfolding: (Yesod.Core.Handler.lookupSessionBS
+                   @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                   (Selects.$s$fMonadHandlerHandlerT @ Foundation.Sitio)
+                   Selects.selectCasaId7) -}
+a1cc0674bf45b6b60a437b84e47319b4
+  selectConsumoAmbiente ::
+    Foundation.AmbienteId -> Foundation.Handler [GHC.Types.Double]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (aid :: Foundation.AmbienteId) ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Consumo
+                       @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Selects.selectConsumoAmbiente3
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Consumo>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendConsumo[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.Sitio)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Consumo
+                             @ Foundation.AmbienteId
+                             Foundation.$fPersistFieldKey1
+                             Selects.selectConsumoAmbiente2
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Foundation.AmbienteId>_N)
+                             (Data.Either.Left
+                                @ Foundation.AmbienteId
+                                @ [Foundation.AmbienteId]
+                                aid)
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.[]
+                             @ (Database.Persist.Class.PersistEntity.Filter
+                                  Foundation.Consumo)))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Consumo))
+                 } in
+                 let {
+                   ds :: Database.Persist.Sql.Types.Internal.SqlBackend
+                         -> Yesod.Core.Types.HandlerT
+                              Foundation.Sitio
+                              GHC.Types.IO
+                              [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                     let {
+                       ds1 :: Yesod.Core.Types.HandlerT
+                                Foundation.Sitio
+                                GHC.Types.IO
+                                (Data.Acquire.Internal.Acquire
+                                   (Data.Conduit.Internal.Conduit.Source
+                                      GHC.Types.IO
+                                      (Database.Persist.Class.PersistEntity.Entity
+                                         Foundation.Consumo)))
+                       = m1
+                           `cast`
+                         (Control.Monad.Trans.Reader.N:ReaderT[0]
+                              <*>_N
+                              <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                              <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                              <Data.Acquire.Internal.Acquire
+                                 (Data.Conduit.Internal.Conduit.Source
+                                    GHC.Types.IO
+                                    (Database.Persist.Class.PersistEntity.Entity
+                                       Foundation.Consumo))>_N)
+                           r1
+                     } in
+                     (\ (r :: Yesod.Core.Types.HandlerData
+                                Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                        (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                      case (ds1
+                              `cast`
+                            (Yesod.Core.Types.N:HandlerT[0]
+                                 <Foundation.Sitio>_N
+                                 <GHC.Types.IO>_N
+                                 <Data.Acquire.Internal.Acquire
+                                    (Data.Conduit.Internal.Conduit.Source
+                                       GHC.Types.IO
+                                       (Database.Persist.Class.PersistEntity.Entity
+                                          Foundation.Consumo))>_N)
+                              r)
+                             `cast`
+                           (GHC.Types.N:IO[0]
+                                <Data.Acquire.Internal.Acquire
+                                   (Data.Conduit.Internal.Conduit.Source
+                                      GHC.Types.IO
+                                      (Database.Persist.Class.PersistEntity.Entity
+                                         Foundation.Consumo))>_R)
+                             s of ds2 { (#,#) ipv ipv1 ->
+                      (Data.Acquire.Internal.with
+                         @ GHC.Types.IO
+                         @ (Data.Conduit.Internal.Conduit.Source
+                              GHC.Types.IO
+                              (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo))
+                         @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                         Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                         ipv1
+                         (Database.Persist.Class.PersistQuery.selectList1
+                            @ Foundation.Consumo)
+                           `cast`
+                         (<Data.Conduit.Internal.Conduit.Source
+                             GHC.Types.IO
+                             (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)>_R
+                          ->_R Sym (GHC.Types.N:IO[0]
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Consumo]>_R)))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <[Database.Persist.Class.PersistEntity.Entity
+                               Foundation.Consumo]>_R)
+                        ipv })
+                       `cast`
+                     (Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <[Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo]>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N
+                                    <GHC.Types.IO>_N
+                                    <[Database.Persist.Class.PersistEntity.Entity
+                                        Foundation.Consumo]>_N)))
+                 } in
+                 (\ (r :: Yesod.Core.Types.HandlerData
+                            Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case Foundation.$fYesodPersistSitio1
+                         @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                         ds
+                           `cast`
+                         (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                   <*>_N
+                                   (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                   <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                   <[Database.Persist.Class.PersistEntity.Entity
+                                       Foundation.Consumo]>_N))
+                         r
+                         s of ds1 { (#,#) ipv ipv1 ->
+                  (# ipv,
+                     GHC.Base.map
+                       @ (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)
+                       @ GHC.Types.Double
+                       Selects.selectConsumoAmbiente1
+                       ipv1 #) })
+                   `cast`
+                 (Trans
+                      (<Yesod.Core.Types.HandlerData
+                          Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <[GHC.Types.Double]>_R))
+                      (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                <Foundation.Sitio>_N <GHC.Types.IO>_N <[GHC.Types.Double]>_N)))) -}
+15bd3db67d6e79db12275c86b64ae3bb
+  selectConsumoAmbiente1 ::
+    Database.Persist.Class.PersistEntity.Entity Foundation.Consumo
+    -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLS(LSLL)),1*U(A,A,1*U(A,U,A,A))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Database.Persist.Class.PersistEntity.Entity
+                           Foundation.Consumo) ->
+                 case x of wild { Database.Persist.Class.PersistEntity.Entity $dPersistEntity ds1 ds2 ->
+                 case ds2 of wild1 { Foundation.Consumo ds4 dt ds5 ds3 ->
+                 GHC.Types.D# dt } }) -}
+86cd25eb804780ed240694d2c4eac07d
+  selectConsumoAmbiente2 ::
+    Foundation.R:EntityFieldConsumotyp
+      (Database.Persist.Class.PersistEntity.Key Foundation.Ambiente)
+  {- HasNoCafRefs, Strictness: m5,
+     Unfolding: (Foundation.ConsumoAmbienteId
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Ambiente)
+                   Selects.$s$WConsumoAmbienteId2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Database.Persist.Class.PersistEntity.Key
+                                       Foundation.Ambiente>_N <Database.Persist.Class.PersistEntity.Key
+                                                                 Foundation.Ambiente>_N)) -}
+f7bee2da8212a11ff76f61231dc34c5e
+  selectConsumoAmbiente3 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.Consumo,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fPersistEntityConsumo,
+                  Selects.selectCasaId6
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+be36bbbbcbbb42988637f88b501dedfe
+  selectConsumoAmbienteAno ::
+    Foundation.AmbienteId
+    -> Foundation.Handler [(GHC.Types.Double, GHC.Types.Int)]
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoAmbienteAno1
+                  `cast`
+                (<Foundation.AmbienteId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <[(GHC.Types.Double, GHC.Types.Int)]>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N
+                                    <GHC.Types.IO>_N
+                                    <[(GHC.Types.Double, GHC.Types.Int)]>_N))) -}
+23cfd0e6888d9a27cf315c83c775daeb
+  selectConsumoAmbienteAno1 ::
+    Foundation.AmbienteId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.Types.Double, GHC.Types.Int)] #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (aid :: Foundation.AmbienteId)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Data.Time.Clock.CTimeval.getCTimeval1
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Consumo
+                       @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Selects.selectConsumoAmbiente3
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Consumo>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendConsumo[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.Sitio)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Consumo
+                             @ Foundation.AmbienteId
+                             Foundation.$fPersistFieldKey1
+                             Selects.selectConsumoAmbiente2
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Foundation.AmbienteId>_N)
+                             (Data.Either.Left
+                                @ Foundation.AmbienteId
+                                @ [Foundation.AmbienteId]
+                                aid)
+                             Database.Persist.Types.Base.Eq)
+                          (let {
+                             ano :: GHC.Integer.Type.Integer
+                             = case Data.Time.Calendar.Gregorian.$wtoGregorian
+                                      (case Data.Time.Clock.POSIX.$wposixSecondsToUTCTime
+                                              (Data.Time.Clock.POSIX.getCurrentTime2
+                                                 ipv1) of ww { (#,#) ww1 ww2 ->
+                                       ww1 }) of ww { (#,,#) ww1 ww2 ww3 ->
+                               ww1 }
+                           } in
+                           GHC.Types.:
+                             @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                             (Database.Persist.Class.PersistEntity.Filter
+                                @ Foundation.Consumo
+                                @ Data.Time.Calendar.Days.Day
+                                Database.Persist.Class.PersistField.$fPersistFieldDay
+                                Selects.selectConsumoAmbienteAno3
+                                  `cast`
+                                (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                (Data.Either.Left
+                                   @ Data.Time.Calendar.Days.Day
+                                   @ [Data.Time.Calendar.Days.Day]
+                                   (case Data.Time.Calendar.MonthDay.$wmonthAndDayToDayOfYear
+                                           (Data.Time.Calendar.OrdinalDate.isLeapYear ano)
+                                           1#
+                                           1# of ww4 { DEFAULT ->
+                                    Data.Time.Calendar.OrdinalDate.$wfromOrdinalDate ano ww4 }))
+                                Database.Persist.Types.Base.Ge)
+                             (GHC.Types.:
+                                @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                                (Database.Persist.Class.PersistEntity.Filter
+                                   @ Foundation.Consumo
+                                   @ Data.Time.Calendar.Days.Day
+                                   Database.Persist.Class.PersistField.$fPersistFieldDay
+                                   Selects.selectConsumoAmbienteAno3
+                                     `cast`
+                                   (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                   (Data.Either.Left
+                                      @ Data.Time.Calendar.Days.Day
+                                      @ [Data.Time.Calendar.Days.Day]
+                                      (case Data.Time.Calendar.MonthDay.$wmonthAndDayToDayOfYear
+                                              (Data.Time.Calendar.OrdinalDate.isLeapYear ano)
+                                              12#
+                                              31# of ww4 { DEFAULT ->
+                                       Data.Time.Calendar.OrdinalDate.$wfromOrdinalDate ano ww4 }))
+                                   Database.Persist.Types.Base.Le)
+                                (GHC.Types.[]
+                                   @ (Database.Persist.Class.PersistEntity.Filter
+                                        Foundation.Consumo)))))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Consumo))
+                 } in
+                 case Foundation.$fYesodPersistSitio1
+                        @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds1 :: Yesod.Core.Types.HandlerT
+                                    Foundation.Sitio
+                                    GHC.Types.IO
+                                    (Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Consumo))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds1
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.Sitio>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Consumo))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo))>_R)
+                                 s of ds2 { (#,#) ipv2 ipv3 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo))
+                             @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv3
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.Consumo)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.Consumo]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity
+                                   Foundation.Consumo]>_R)
+                            ipv2 })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.Consumo]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.Sitio>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Consumo]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Consumo]>_N))
+                        eta
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Base.map
+                      @ (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)
+                      @ (GHC.Types.Double, GHC.Types.Int)
+                      Selects.selectConsumoAmbienteAno2
+                      ipv3 #) } }) -}
+50ea6517fb654b25761f6303f4ca91ec
+  selectConsumoAmbienteAno2 ::
+    Database.Persist.Class.PersistEntity.Entity Foundation.Consumo
+    -> (GHC.Types.Double, GHC.Types.Int)
+  {- Arity: 1, Strictness: <L,U(A,A,U(U,U,A,A))>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Database.Persist.Class.PersistEntity.Entity
+                           Foundation.Consumo) ->
+                 (case w of wild { Database.Persist.Class.PersistEntity.Entity $dPersistEntity ds1 ds2 ->
+                  case ds2 of wild1 { Foundation.Consumo ds4 dt ds5 ds3 ->
+                  GHC.Types.D# dt } },
+                  case Data.Time.Calendar.Gregorian.$wtoGregorian
+                         (case w of wild { Database.Persist.Class.PersistEntity.Entity $dPersistEntity ds1 ds2 ->
+                          case ds2 of wild1 { Foundation.Consumo ds4 dt ds5 ds3 ->
+                          ds4 } }) of ww { (#,,#) ww1 ww2 ww3 ->
+                  ww2 })) -}
+1f144807658954a251100f1d3ae33a26
+  selectConsumoAmbienteAno3 ::
+    Foundation.R:EntityFieldConsumotyp Data.Time.Calendar.Days.Day
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Foundation.ConsumoDtConsumo
+                   @ Data.Time.Calendar.Days.Day
+                   Selects.$s$WConsumoDtConsumo2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Data.Time.Calendar.Days.Day>_N <Data.Time.Calendar.Days.Day>_N)) -}
+79a4fa6e4c36400be3f4f291ddd2c1b8
+  selectConsumoAmbienteDia ::
+    Foundation.AmbienteId -> Foundation.Handler GHC.Types.Double
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoAmbienteDia1
+                  `cast`
+                (<Foundation.AmbienteId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N <GHC.Types.IO>_N <GHC.Types.Double>_N))) -}
+358e6e1e3e945915c7b3a909ea10dc04
+  selectConsumoAmbienteDia1 ::
+    Foundation.AmbienteId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (aid :: Foundation.AmbienteId)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Data.Time.Clock.CTimeval.getCTimeval1
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Consumo
+                       @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Selects.selectConsumoAmbiente3
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Consumo>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendConsumo[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.Sitio)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Consumo
+                             @ Foundation.AmbienteId
+                             Foundation.$fPersistFieldKey1
+                             Selects.selectConsumoAmbiente2
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Foundation.AmbienteId>_N)
+                             (Data.Either.Left
+                                @ Foundation.AmbienteId
+                                @ [Foundation.AmbienteId]
+                                aid)
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.:
+                             @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                             (Database.Persist.Class.PersistEntity.Filter
+                                @ Foundation.Consumo
+                                @ Data.Time.Calendar.Days.Day
+                                Database.Persist.Class.PersistField.$fPersistFieldDay
+                                Selects.selectConsumoAmbienteAno3
+                                  `cast`
+                                (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                (Data.Either.Left
+                                   @ Data.Time.Calendar.Days.Day
+                                   @ [Data.Time.Calendar.Days.Day]
+                                   (case Data.Time.Calendar.Gregorian.$wtoGregorian
+                                           (case Data.Time.Clock.POSIX.$wposixSecondsToUTCTime
+                                                   (Data.Time.Clock.POSIX.getCurrentTime2
+                                                      ipv1) of ww { (#,#) ww1 ww2 ->
+                                            ww1 }) of ww { (#,,#) ww1 ww2 ww3 ->
+                                    Data.Time.Calendar.Gregorian.fromGregorian ww1 ww2 ww3 }))
+                                Database.Persist.Types.Base.Eq)
+                             (GHC.Types.[]
+                                @ (Database.Persist.Class.PersistEntity.Filter
+                                     Foundation.Consumo))))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Consumo))
+                 } in
+                 case Foundation.$fYesodPersistSitio1
+                        @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds1 :: Yesod.Core.Types.HandlerT
+                                    Foundation.Sitio
+                                    GHC.Types.IO
+                                    (Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Consumo))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds1
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.Sitio>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Consumo))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo))>_R)
+                                 s of ds2 { (#,#) ipv2 ipv3 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo))
+                             @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv3
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.Consumo)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.Consumo]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity
+                                   Foundation.Consumo]>_R)
+                            ipv2 })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.Consumo]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.Sitio>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Consumo]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Consumo]>_N))
+                        eta
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    case Selects.$wgo ipv3 0.0## of ww { DEFAULT ->
+                    GHC.Types.D# ww } #) } }) -}
+df817cff445c195ab9982991cdc57bb5
+  selectConsumoAmbienteMes ::
+    Foundation.AmbienteId
+    -> Foundation.Handler
+         [(GHC.Types.Double, Data.Time.Calendar.Days.Day)]
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoAmbienteMes1
+                  `cast`
+                (<Foundation.AmbienteId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <[(GHC.Types.Double, Data.Time.Calendar.Days.Day)]>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N
+                                    <GHC.Types.IO>_N
+                                    <[(GHC.Types.Double, Data.Time.Calendar.Days.Day)]>_N))) -}
+0f76dbc10a4fcaead0dfb166c61ef711
+  selectConsumoAmbienteMes1 ::
+    Foundation.AmbienteId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.Types.Double, Data.Time.Calendar.Days.Day)] #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (aid :: Foundation.AmbienteId)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Data.Time.Clock.CTimeval.getCTimeval1
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Consumo
+                       @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Selects.selectConsumoAmbiente3
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Consumo>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendConsumo[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.Sitio)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Consumo
+                             @ Foundation.AmbienteId
+                             Foundation.$fPersistFieldKey1
+                             Selects.selectConsumoAmbiente2
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Foundation.AmbienteId>_N)
+                             (Data.Either.Left
+                                @ Foundation.AmbienteId
+                                @ [Foundation.AmbienteId]
+                                aid)
+                             Database.Persist.Types.Base.Eq)
+                          (let {
+                             ds1 :: (GHC.Integer.Type.Integer, GHC.Types.Int, GHC.Types.Int)
+                             = case Data.Time.Calendar.Gregorian.$wtoGregorian
+                                      (case Data.Time.Clock.POSIX.$wposixSecondsToUTCTime
+                                              (Data.Time.Clock.POSIX.getCurrentTime2
+                                                 ipv1) of ww { (#,#) ww1 ww2 ->
+                                       ww1 }) of ww { (#,,#) ww1 ww2 ww3 ->
+                               (ww1, ww2, ww3) }
+                           } in
+                           let {
+                             ano :: GHC.Integer.Type.Integer
+                             = case ds1 of wild { (,,) ano1 mes ds2 -> ano1 }
+                           } in
+                           let {
+                             mes :: GHC.Types.Int
+                             = case ds1 of wild { (,,) ano1 mes1 ds2 -> mes1 }
+                           } in
+                           GHC.Types.:
+                             @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                             (Database.Persist.Class.PersistEntity.Filter
+                                @ Foundation.Consumo
+                                @ Data.Time.Calendar.Days.Day
+                                Database.Persist.Class.PersistField.$fPersistFieldDay
+                                Selects.selectConsumoAmbienteAno3
+                                  `cast`
+                                (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                (Data.Either.Left
+                                   @ Data.Time.Calendar.Days.Day
+                                   @ [Data.Time.Calendar.Days.Day]
+                                   (case mes of ww { GHC.Types.I# ww1 ->
+                                    case Data.Time.Calendar.MonthDay.$wmonthAndDayToDayOfYear
+                                           (Data.Time.Calendar.OrdinalDate.isLeapYear ano)
+                                           ww1
+                                           1# of ww4 { DEFAULT ->
+                                    Data.Time.Calendar.OrdinalDate.$wfromOrdinalDate ano ww4 } }))
+                                Database.Persist.Types.Base.Ge)
+                             (GHC.Types.:
+                                @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                                (Database.Persist.Class.PersistEntity.Filter
+                                   @ Foundation.Consumo
+                                   @ Data.Time.Calendar.Days.Day
+                                   Database.Persist.Class.PersistField.$fPersistFieldDay
+                                   Selects.selectConsumoAmbienteAno3
+                                     `cast`
+                                   (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                   (Data.Either.Left
+                                      @ Data.Time.Calendar.Days.Day
+                                      @ [Data.Time.Calendar.Days.Day]
+                                      (case mes of ww { GHC.Types.I# ww1 ->
+                                       case Data.Time.Calendar.MonthDay.$wmonthLength
+                                              (Data.Time.Calendar.OrdinalDate.isLeapYear ano)
+                                              ww1 of ww2 { GHC.Types.I# ww3 ->
+                                       Data.Time.Calendar.Gregorian.$wfromGregorian
+                                         ano
+                                         ww1
+                                         ww3 } }))
+                                   Database.Persist.Types.Base.Le)
+                                (GHC.Types.[]
+                                   @ (Database.Persist.Class.PersistEntity.Filter
+                                        Foundation.Consumo)))))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Consumo))
+                 } in
+                 case Foundation.$fYesodPersistSitio1
+                        @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds1 :: Yesod.Core.Types.HandlerT
+                                    Foundation.Sitio
+                                    GHC.Types.IO
+                                    (Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Consumo))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds1
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.Sitio>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Consumo))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo))>_R)
+                                 s of ds2 { (#,#) ipv2 ipv3 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo))
+                             @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv3
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.Consumo)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.Consumo]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity
+                                   Foundation.Consumo]>_R)
+                            ipv2 })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.Consumo]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.Sitio>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Consumo]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Consumo]>_N))
+                        eta
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Base.map
+                      @ (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)
+                      @ (GHC.Types.Double, Data.Time.Calendar.Days.Day)
+                      Selects.selectConsumoAmbienteMes2
+                      ipv3 #) } }) -}
+85046bca488876730221eec368f2c2b9
+  selectConsumoAmbienteMes2 ::
+    Database.Persist.Class.PersistEntity.Entity Foundation.Consumo
+    -> (GHC.Types.Double, Data.Time.Calendar.Days.Day)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,A,U(U,U,A,A))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ent :: Database.Persist.Class.PersistEntity.Entity
+                             Foundation.Consumo) ->
+                 (case ent of wild { Database.Persist.Class.PersistEntity.Entity $dPersistEntity ds1 ds2 ->
+                  case ds2 of wild1 { Foundation.Consumo ds4 dt ds5 ds3 ->
+                  GHC.Types.D# dt } },
+                  case ent of wild { Database.Persist.Class.PersistEntity.Entity $dPersistEntity ds1 ds2 ->
+                  case ds2 of wild1 { Foundation.Consumo ds4 dt ds5 ds3 ->
+                  ds4 } })) -}
+fd2a8046cb46be1afec61f99088d900c
+  selectConsumoAmbienteMesQual ::
+    Foundation.AmbienteId
+    -> GHC.Types.Int -> Foundation.Handler GHC.Types.Double
+  {- Arity: 4, Strictness: <L,U><L,U(U)><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoAmbienteMesQual1
+                  `cast`
+                (<Foundation.AmbienteId>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N <GHC.Types.IO>_N <GHC.Types.Double>_N))) -}
+a05355fb5db0bc3e8b9e6e5cc282f929
+  selectConsumoAmbienteMesQual1 ::
+    Foundation.AmbienteId
+    -> GHC.Types.Int
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 4, Strictness: <L,U><L,U(U)><L,U><S,U>,
+     Unfolding: (\ (aid :: Foundation.AmbienteId)
+                   (mes :: GHC.Types.Int)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Data.Time.Clock.CTimeval.getCTimeval1
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Consumo
+                       @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Selects.selectConsumoAmbiente3
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Consumo>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendConsumo[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.Sitio)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Consumo
+                             @ Foundation.AmbienteId
+                             Foundation.$fPersistFieldKey1
+                             Selects.selectConsumoAmbiente2
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Foundation.AmbienteId>_N)
+                             (Data.Either.Left
+                                @ Foundation.AmbienteId
+                                @ [Foundation.AmbienteId]
+                                aid)
+                             Database.Persist.Types.Base.Eq)
+                          (let {
+                             ano :: GHC.Integer.Type.Integer
+                             = case Data.Time.Calendar.Gregorian.$wtoGregorian
+                                      (case Data.Time.Clock.POSIX.$wposixSecondsToUTCTime
+                                              (Data.Time.Clock.POSIX.getCurrentTime2
+                                                 ipv1) of ww { (#,#) ww1 ww2 ->
+                                       ww1 }) of ww { (#,,#) ww1 ww2 ww3 ->
+                               ww1 }
+                           } in
+                           GHC.Types.:
+                             @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                             (Database.Persist.Class.PersistEntity.Filter
+                                @ Foundation.Consumo
+                                @ Data.Time.Calendar.Days.Day
+                                Database.Persist.Class.PersistField.$fPersistFieldDay
+                                Selects.selectConsumoAmbienteAno3
+                                  `cast`
+                                (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                (Data.Either.Left
+                                   @ Data.Time.Calendar.Days.Day
+                                   @ [Data.Time.Calendar.Days.Day]
+                                   (case mes of ww { GHC.Types.I# ww1 ->
+                                    case Data.Time.Calendar.MonthDay.$wmonthAndDayToDayOfYear
+                                           (Data.Time.Calendar.OrdinalDate.isLeapYear ano)
+                                           ww1
+                                           1# of ww4 { DEFAULT ->
+                                    Data.Time.Calendar.OrdinalDate.$wfromOrdinalDate ano ww4 } }))
+                                Database.Persist.Types.Base.Ge)
+                             (GHC.Types.:
+                                @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                                (Database.Persist.Class.PersistEntity.Filter
+                                   @ Foundation.Consumo
+                                   @ Data.Time.Calendar.Days.Day
+                                   Database.Persist.Class.PersistField.$fPersistFieldDay
+                                   Selects.selectConsumoAmbienteAno3
+                                     `cast`
+                                   (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                   (Data.Either.Left
+                                      @ Data.Time.Calendar.Days.Day
+                                      @ [Data.Time.Calendar.Days.Day]
+                                      (case mes of ww { GHC.Types.I# ww1 ->
+                                       case Data.Time.Calendar.MonthDay.$wmonthLength
+                                              (Data.Time.Calendar.OrdinalDate.isLeapYear ano)
+                                              ww1 of ww2 { GHC.Types.I# ww3 ->
+                                       Data.Time.Calendar.Gregorian.$wfromGregorian
+                                         ano
+                                         ww1
+                                         ww3 } }))
+                                   Database.Persist.Types.Base.Le)
+                                (GHC.Types.[]
+                                   @ (Database.Persist.Class.PersistEntity.Filter
+                                        Foundation.Consumo)))))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Consumo))
+                 } in
+                 case Foundation.$fYesodPersistSitio1
+                        @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds1 :: Yesod.Core.Types.HandlerT
+                                    Foundation.Sitio
+                                    GHC.Types.IO
+                                    (Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Consumo))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds1
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.Sitio>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Consumo))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo))>_R)
+                                 s of ds2 { (#,#) ipv2 ipv3 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo))
+                             @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv3
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.Consumo)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.Consumo]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity
+                                   Foundation.Consumo]>_R)
+                            ipv2 })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.Consumo]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.Sitio>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Consumo]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Consumo]>_N))
+                        eta
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    case Selects.$wgo1 ipv3 0.0## of ww { DEFAULT ->
+                    GHC.Types.D# ww } #) } }) -}
+a3638667b98049c0ada675ba60d43242
+  selectConsumoAmbientePeriodo ::
+    Foundation.AmbienteId
+    -> GHC.Integer.Type.Integer
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Integer.Type.Integer
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Foundation.Handler GHC.Types.Double
+  {- Arity: 7,
+     Strictness: <L,U><L,U><L,1*U(U)><L,1*U(U)><L,U><L,1*U(U)><L,1*U(U)>,
+     Unfolding: (\ (aid :: Foundation.AmbienteId)
+                   (anoI :: GHC.Integer.Type.Integer)
+                   (mesI :: GHC.Types.Int)
+                   (diaI :: GHC.Types.Int)
+                   (anoF :: GHC.Integer.Type.Integer)
+                   (mesF :: GHC.Types.Int)
+                   (diaF :: GHC.Types.Int) ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Consumo
+                       @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Selects.selectConsumoAmbiente3
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Consumo>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendConsumo[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.Sitio)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Consumo
+                             @ Foundation.AmbienteId
+                             Foundation.$fPersistFieldKey1
+                             Selects.selectConsumoAmbiente2
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Foundation.AmbienteId>_N)
+                             (Data.Either.Left
+                                @ Foundation.AmbienteId
+                                @ [Foundation.AmbienteId]
+                                aid)
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.:
+                             @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                             (Database.Persist.Class.PersistEntity.Filter
+                                @ Foundation.Consumo
+                                @ Data.Time.Calendar.Days.Day
+                                Database.Persist.Class.PersistField.$fPersistFieldDay
+                                Selects.selectConsumoAmbienteAno3
+                                  `cast`
+                                (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                (Data.Either.Left
+                                   @ Data.Time.Calendar.Days.Day
+                                   @ [Data.Time.Calendar.Days.Day]
+                                   (Data.Time.Calendar.Gregorian.fromGregorian anoI mesI diaI))
+                                Database.Persist.Types.Base.Ge)
+                             (GHC.Types.:
+                                @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                                (Database.Persist.Class.PersistEntity.Filter
+                                   @ Foundation.Consumo
+                                   @ Data.Time.Calendar.Days.Day
+                                   Database.Persist.Class.PersistField.$fPersistFieldDay
+                                   Selects.selectConsumoAmbienteAno3
+                                     `cast`
+                                   (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                   (Data.Either.Left
+                                      @ Data.Time.Calendar.Days.Day
+                                      @ [Data.Time.Calendar.Days.Day]
+                                      (Data.Time.Calendar.Gregorian.fromGregorian anoF mesF diaF))
+                                   Database.Persist.Types.Base.Le)
+                                (GHC.Types.[]
+                                   @ (Database.Persist.Class.PersistEntity.Filter
+                                        Foundation.Consumo)))))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Consumo))
+                 } in
+                 let {
+                   ds :: Database.Persist.Sql.Types.Internal.SqlBackend
+                         -> Yesod.Core.Types.HandlerT
+                              Foundation.Sitio
+                              GHC.Types.IO
+                              [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                     let {
+                       ds1 :: Yesod.Core.Types.HandlerT
+                                Foundation.Sitio
+                                GHC.Types.IO
+                                (Data.Acquire.Internal.Acquire
+                                   (Data.Conduit.Internal.Conduit.Source
+                                      GHC.Types.IO
+                                      (Database.Persist.Class.PersistEntity.Entity
+                                         Foundation.Consumo)))
+                       = m1
+                           `cast`
+                         (Control.Monad.Trans.Reader.N:ReaderT[0]
+                              <*>_N
+                              <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                              <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                              <Data.Acquire.Internal.Acquire
+                                 (Data.Conduit.Internal.Conduit.Source
+                                    GHC.Types.IO
+                                    (Database.Persist.Class.PersistEntity.Entity
+                                       Foundation.Consumo))>_N)
+                           r1
+                     } in
+                     (\ (r :: Yesod.Core.Types.HandlerData
+                                Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                        (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                      case (ds1
+                              `cast`
+                            (Yesod.Core.Types.N:HandlerT[0]
+                                 <Foundation.Sitio>_N
+                                 <GHC.Types.IO>_N
+                                 <Data.Acquire.Internal.Acquire
+                                    (Data.Conduit.Internal.Conduit.Source
+                                       GHC.Types.IO
+                                       (Database.Persist.Class.PersistEntity.Entity
+                                          Foundation.Consumo))>_N)
+                              r)
+                             `cast`
+                           (GHC.Types.N:IO[0]
+                                <Data.Acquire.Internal.Acquire
+                                   (Data.Conduit.Internal.Conduit.Source
+                                      GHC.Types.IO
+                                      (Database.Persist.Class.PersistEntity.Entity
+                                         Foundation.Consumo))>_R)
+                             s of ds2 { (#,#) ipv ipv1 ->
+                      (Data.Acquire.Internal.with
+                         @ GHC.Types.IO
+                         @ (Data.Conduit.Internal.Conduit.Source
+                              GHC.Types.IO
+                              (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo))
+                         @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                         Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                         ipv1
+                         (Database.Persist.Class.PersistQuery.selectList1
+                            @ Foundation.Consumo)
+                           `cast`
+                         (<Data.Conduit.Internal.Conduit.Source
+                             GHC.Types.IO
+                             (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)>_R
+                          ->_R Sym (GHC.Types.N:IO[0]
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Consumo]>_R)))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <[Database.Persist.Class.PersistEntity.Entity
+                               Foundation.Consumo]>_R)
+                        ipv })
+                       `cast`
+                     (Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <[Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo]>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N
+                                    <GHC.Types.IO>_N
+                                    <[Database.Persist.Class.PersistEntity.Entity
+                                        Foundation.Consumo]>_N)))
+                 } in
+                 (\ (r :: Yesod.Core.Types.HandlerData
+                            Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case Foundation.$fYesodPersistSitio1
+                         @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                         ds
+                           `cast`
+                         (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                   <*>_N
+                                   (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                   <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                   <[Database.Persist.Class.PersistEntity.Entity
+                                       Foundation.Consumo]>_N))
+                         r
+                         s of ds1 { (#,#) ipv ipv1 ->
+                  (# ipv,
+                     case Selects.$wgo2 ipv1 0.0## of ww { DEFAULT ->
+                     GHC.Types.D# ww } #) })
+                   `cast`
+                 (Trans
+                      (<Yesod.Core.Types.HandlerData
+                          Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                       ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R))
+                      (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                <Foundation.Sitio>_N <GHC.Types.IO>_N <GHC.Types.Double>_N)))) -}
+ec63a37fb76f49d92604fbfdade07f80
+  selectConsumoAmbienteSemana ::
+    Foundation.AmbienteId
+    -> Foundation.Handler
+         [(GHC.Types.Double, Data.Time.Calendar.Days.Day)]
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoAmbienteSemana1
+                  `cast`
+                (<Foundation.AmbienteId>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <[(GHC.Types.Double, Data.Time.Calendar.Days.Day)]>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N
+                                    <GHC.Types.IO>_N
+                                    <[(GHC.Types.Double, Data.Time.Calendar.Days.Day)]>_N))) -}
+fb964add7db63623da7f35c461d12c96
+  selectConsumoAmbienteSemana1 ::
+    Foundation.AmbienteId
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.Types.Double, Data.Time.Calendar.Days.Day)] #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: (\ (aid :: Foundation.AmbienteId)
+                   (eta :: Yesod.Core.Types.HandlerData
+                             Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Data.Time.Clock.CTimeval.getCTimeval1
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Consumo
+                       @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Selects.selectConsumoAmbiente3
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Consumo>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendConsumo[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.Sitio)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Consumo
+                             @ Foundation.AmbienteId
+                             Foundation.$fPersistFieldKey1
+                             Selects.selectConsumoAmbiente2
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Foundation.AmbienteId>_N)
+                             (Data.Either.Left
+                                @ Foundation.AmbienteId
+                                @ [Foundation.AmbienteId]
+                                aid)
+                             Database.Persist.Types.Base.Eq)
+                          (let {
+                             dataDiff :: Data.Time.Calendar.Days.Day
+                             = case Data.Time.Calendar.Gregorian.$wtoGregorian
+                                      (case Data.Time.Clock.POSIX.$wposixSecondsToUTCTime
+                                              (Data.Time.Clock.POSIX.getCurrentTime2
+                                                 ipv1) of ww { (#,#) ww1 ww2 ->
+                                       ww1 }) of ww { (#,,#) ww1 ww2 ww3 ->
+                               case ww2 of ww4 { GHC.Types.I# ww6 ->
+                               case ww3 of ww7 { GHC.Types.I# ww8 ->
+                               case Data.Time.Calendar.MonthDay.$wmonthAndDayToDayOfYear
+                                      (Data.Time.Calendar.OrdinalDate.isLeapYear ww1)
+                                      ww6
+                                      ww8 of ww9 { DEFAULT ->
+                               Data.Time.Calendar.OrdinalDate.$wfromOrdinalDate ww1 ww9 } } } }
+                           } in
+                           GHC.Types.:
+                             @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                             (Database.Persist.Class.PersistEntity.Filter
+                                @ Foundation.Consumo
+                                @ Data.Time.Calendar.Days.Day
+                                Database.Persist.Class.PersistField.$fPersistFieldDay
+                                Selects.selectConsumoAmbienteAno3
+                                  `cast`
+                                (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                (Data.Either.Left
+                                   @ Data.Time.Calendar.Days.Day
+                                   @ [Data.Time.Calendar.Days.Day]
+                                   (GHC.Integer.Type.plusInteger
+                                      dataDiff `cast` (Data.Time.Calendar.Days.N:Day[0])
+                                      Selects.selectConsumoAmbienteSemana2)
+                                     `cast`
+                                   (Sym (Data.Time.Calendar.Days.N:Day[0])))
+                                Database.Persist.Types.Base.Ge)
+                             (GHC.Types.:
+                                @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                                (Database.Persist.Class.PersistEntity.Filter
+                                   @ Foundation.Consumo
+                                   @ Data.Time.Calendar.Days.Day
+                                   Database.Persist.Class.PersistField.$fPersistFieldDay
+                                   Selects.selectConsumoAmbienteAno3
+                                     `cast`
+                                   (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Data.Time.Calendar.Days.Day>_N)
+                                   (Data.Either.Left
+                                      @ Data.Time.Calendar.Days.Day
+                                      @ [Data.Time.Calendar.Days.Day]
+                                      dataDiff)
+                                   Database.Persist.Types.Base.Le)
+                                (GHC.Types.[]
+                                   @ (Database.Persist.Class.PersistEntity.Filter
+                                        Foundation.Consumo)))))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Consumo))
+                 } in
+                 case Foundation.$fYesodPersistSitio1
+                        @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds1 :: Yesod.Core.Types.HandlerT
+                                    Foundation.Sitio
+                                    GHC.Types.IO
+                                    (Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Consumo))>_N)
+                               r1
+                         } in
+                         (\ (r :: Yesod.Core.Types.HandlerData
+                                    Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds1
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.Sitio>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Consumo))>_N)
+                                  r)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Consumo))>_R)
+                                 s of ds2 { (#,#) ipv2 ipv3 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo))
+                             @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv3
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.Consumo)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.Consumo]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity
+                                   Foundation.Consumo]>_R)
+                            ipv2 })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.Consumo]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.Sitio>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Consumo]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Consumo]>_N))
+                        eta
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2,
+                    GHC.Base.map
+                      @ (Database.Persist.Class.PersistEntity.Entity Foundation.Consumo)
+                      @ (GHC.Types.Double, Data.Time.Calendar.Days.Day)
+                      Selects.selectConsumoAmbienteMes2
+                      ipv3 #) } }) -}
+485a6ae4df5c00d4ec9bb7d56dc85bfe
+  selectConsumoAmbienteSemana2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (-7) -}
+8315b76a8b252c0ed174845fd863d2fe
+  selectConsumoCasa :: Foundation.Handler GHC.Types.Double
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoCasa1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.Sitio>_N <GHC.Types.IO>_N <GHC.Types.Double>_N))) -}
+6b9aa7cf6e0719792847286f9ef1db19
+  selectConsumoCasa1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (r :: Yesod.Core.Types.HandlerData
+                           Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (Selects.selectCasaId_m1
+                         `cast`
+                       (Yesod.Core.Types.N:HandlerT[0]
+                            <Foundation.Sitio>_N
+                            <GHC.Types.IO>_N
+                            <GHC.Base.Maybe Data.ByteString.Internal.ByteString>_N)
+                         r)
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <GHC.Base.Maybe Data.ByteString.Internal.ByteString>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Selects.selectCasaId2
+                        (case ipv1 of wild {
+                           GHC.Base.Nothing -> GHC.Base.Nothing @ Data.Text.Internal.Text
+                           GHC.Base.Just x
+                           -> GHC.Base.Just
+                                @ Data.Text.Internal.Text
+                                (case x of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                                 Data.Text.Encoding.$wdecodeUtf8With
+                                   Data.Text.Encoding.Error.lenientDecode
+                                   ww1
+                                   ww2
+                                   ww3
+                                   ww4 }) })
+                        r
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 let {
+                   m1 :: Control.Monad.Trans.Reader.ReaderT
+                           Database.Persist.Sql.Types.Internal.SqlBackend
+                           (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Ambiente)))
+                   = Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                       @ Foundation.Ambiente
+                       @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                       @ GHC.Types.IO
+                       Selects.selectConsumoCasa5
+                         `cast`
+                       (GHC.Classes.(%,%)
+                          <Database.Persist.Class.PersistEntity.PersistEntity
+                             Foundation.Ambiente>_N
+                          ((Data.Type.Equality.~)
+                             <*>_N
+                             (Sym (Foundation.D:R:PersistEntityBackendAmbiente[0]))
+                             (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                       (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                          @ Foundation.Sitio)
+                       Control.Monad.IO.Class.$fMonadIOIO
+                       (GHC.Types.:
+                          @ (Database.Persist.Class.PersistEntity.Filter Foundation.Ambiente)
+                          (Database.Persist.Class.PersistEntity.Filter
+                             @ Foundation.Ambiente
+                             @ Foundation.CasaId
+                             Foundation.$fPersistFieldKey3
+                             Selects.selectConsumoCasa4
+                               `cast`
+                             (Sym (Foundation.D:R:EntityFieldAmbientetyp0[0]) <Foundation.CasaId>_N)
+                             (Data.Either.Left @ Foundation.CasaId @ [Foundation.CasaId] ipv3)
+                             Database.Persist.Types.Base.Eq)
+                          (GHC.Types.[]
+                             @ (Database.Persist.Class.PersistEntity.Filter
+                                  Foundation.Ambiente)))
+                       (GHC.Types.[]
+                          @ (Database.Persist.Class.PersistEntity.SelectOpt
+                               Foundation.Ambiente))
+                 } in
+                 case Foundation.$fYesodPersistSitio1
+                        @ [Database.Persist.Class.PersistEntity.Entity Foundation.Ambiente]
+                        (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                         let {
+                           ds :: Yesod.Core.Types.HandlerT
+                                   Foundation.Sitio
+                                   GHC.Types.IO
+                                   (Data.Acquire.Internal.Acquire
+                                      (Data.Conduit.Internal.Conduit.Source
+                                         GHC.Types.IO
+                                         (Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Ambiente)))
+                           = m1
+                               `cast`
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <Data.Acquire.Internal.Acquire
+                                     (Data.Conduit.Internal.Conduit.Source
+                                        GHC.Types.IO
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Ambiente))>_N)
+                               r1
+                         } in
+                         (\ (r2 :: Yesod.Core.Types.HandlerData
+                                     Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                            (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case (ds
+                                  `cast`
+                                (Yesod.Core.Types.N:HandlerT[0]
+                                     <Foundation.Sitio>_N
+                                     <GHC.Types.IO>_N
+                                     <Data.Acquire.Internal.Acquire
+                                        (Data.Conduit.Internal.Conduit.Source
+                                           GHC.Types.IO
+                                           (Database.Persist.Class.PersistEntity.Entity
+                                              Foundation.Ambiente))>_N)
+                                  r2)
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.Acquire.Internal.Acquire
+                                       (Data.Conduit.Internal.Conduit.Source
+                                          GHC.Types.IO
+                                          (Database.Persist.Class.PersistEntity.Entity
+                                             Foundation.Ambiente))>_R)
+                                 s1 of ds3 { (#,#) ipv4 ipv5 ->
+                          (Data.Acquire.Internal.with
+                             @ GHC.Types.IO
+                             @ (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity Foundation.Ambiente))
+                             @ [Database.Persist.Class.PersistEntity.Entity Foundation.Ambiente]
+                             Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                             ipv5
+                             (Database.Persist.Class.PersistQuery.selectList1
+                                @ Foundation.Ambiente)
+                               `cast`
+                             (<Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity
+                                    Foundation.Ambiente)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <[Database.Persist.Class.PersistEntity.Entity
+                                                Foundation.Ambiente]>_R)))
+                            `cast`
+                          (GHC.Types.N:IO[0]
+                               <[Database.Persist.Class.PersistEntity.Entity
+                                   Foundation.Ambiente]>_R)
+                            ipv4 })
+                           `cast`
+                         (Trans
+                              (<Yesod.Core.Types.HandlerData
+                                  Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                               ->_R Sym (GHC.Types.N:IO[0]
+                                             <[Database.Persist.Class.PersistEntity.Entity
+                                                 Foundation.Ambiente]>_R))
+                              (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                        <Foundation.Sitio>_N
+                                        <GHC.Types.IO>_N
+                                        <[Database.Persist.Class.PersistEntity.Entity
+                                            Foundation.Ambiente]>_N))))
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <[Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Ambiente]>_N))
+                        r
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case Selects.selectConsumoCasa3
+                        (GHC.Base.map
+                           @ (Database.Persist.Class.PersistEntity.Entity Foundation.Ambiente)
+                           @ (Yesod.Core.Types.HandlerT
+                                Foundation.Sitio
+                                GHC.Types.IO
+                                [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo])
+                           Selects.selectConsumoCasa2
+                             `cast`
+                           (<Database.Persist.Class.PersistEntity.Entity
+                               Foundation.Ambiente>_R
+                            ->_R Trans
+                                     (<Yesod.Core.Types.HandlerData
+                                         Foundation.Sitio
+                                         (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                                      ->_R Sym (GHC.Types.N:IO[0]
+                                                    <[Database.Persist.Class.PersistEntity.Entity
+                                                        Foundation.Consumo]>_R))
+                                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                               <Foundation.Sitio>_N
+                                               <GHC.Types.IO>_N
+                                               <[Database.Persist.Class.PersistEntity.Entity
+                                                   Foundation.Consumo]>_N)))
+                           ipv5)
+                        r
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 (# ipv6,
+                    case Selects.$wgo3
+                           (Selects.pegaConsumo ipv7)
+                           0.0## of ww { DEFAULT ->
+                    GHC.Types.D# ww } #) } } } }) -}
+bcd8222ffc4f9ca2ad1d8490d7f305bc
+  selectConsumoCasa2 ::
+    Database.Persist.Class.PersistEntity.Entity Foundation.Ambiente
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo] #)
+  {- Arity: 1,
+     Unfolding: (\ (x :: Database.Persist.Class.PersistEntity.Entity
+                           Foundation.Ambiente) ->
+                 Foundation.$fYesodPersistSitio1
+                   @ [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]
+                   (Database.Persist.Class.PersistQuery.selectList
+                      @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                      @ Database.Persist.Sql.Types.Internal.SqlBackend
+                      @ Foundation.Consumo
+                      (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                         @ Foundation.Sitio)
+                      Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend
+                      Selects.selectConsumoAmbiente3
+                        `cast`
+                      (GHC.Classes.(%,%)
+                         <Database.Persist.Class.PersistEntity.PersistEntity
+                            Foundation.Consumo>_N
+                         ((Data.Type.Equality.~)
+                            <*>_N
+                            (Sym (Foundation.D:R:PersistEntityBackendConsumo[0]))
+                            (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                      (GHC.Types.:
+                         @ (Database.Persist.Class.PersistEntity.Filter Foundation.Consumo)
+                         (Database.Persist.Class.PersistEntity.Filter
+                            @ Foundation.Consumo
+                            @ (Database.Persist.Class.PersistEntity.Key Foundation.Ambiente)
+                            Foundation.$fPersistFieldKey1
+                            Selects.selectConsumoAmbiente2
+                              `cast`
+                            (Sym (Foundation.D:R:EntityFieldConsumotyp0[0]) <Database.Persist.Class.PersistEntity.Key
+                                                                               Foundation.Ambiente>_N)
+                            (Data.Either.Left
+                               @ (Database.Persist.Class.PersistEntity.Key Foundation.Ambiente)
+                               @ [Database.Persist.Class.PersistEntity.Key Foundation.Ambiente]
+                               (Database.Persist.Class.PersistEntity.entityKey
+                                  @ Foundation.Ambiente
+                                  x))
+                            Database.Persist.Types.Base.Eq)
+                         (GHC.Types.[]
+                            @ (Database.Persist.Class.PersistEntity.Filter
+                                 Foundation.Consumo)))
+                      (GHC.Types.[]
+                         @ (Database.Persist.Class.PersistEntity.SelectOpt
+                              Foundation.Consumo)))
+                     `cast`
+                   (Control.Monad.Trans.Reader.ReaderT
+                      <*>_N
+                      (Sub (Sym (Foundation.D:R:YesodPersistBackendSitio[0])))
+                      <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                      <[Database.Persist.Class.PersistEntity.Entity
+                          Foundation.Consumo]>_N)_R) -}
+d947c4964abbc8cc1fdd2c7eca298cde
+  selectConsumoCasa3 ::
+    [Yesod.Core.Types.HandlerT
+       Foundation.Sitio
+       GHC.Types.IO
+       [Database.Persist.Class.PersistEntity.Entity Foundation.Consumo]]
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [[Database.Persist.Class.PersistEntity.Entity
+              Foundation.Consumo]] #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,U><S,U> -}
+a5e701c0953ad5874059b10e42adeb34
+  selectConsumoCasa4 ::
+    Foundation.R:EntityFieldAmbientetyp Foundation.CasaId
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Foundation.AmbienteCasaId
+                   @ Foundation.CasaId
+                   Selects.$s$WAmbienteCasaId2
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <*>_N) <Database.Persist.Class.PersistEntity.Key
+                                       Foundation.Casa>_N <Database.Persist.Class.PersistEntity.Key
+                                                             Foundation.Casa>_N)) -}
+d948e3613f87ddacc18c06da9cf740ca
+  selectConsumoCasa5 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.Ambiente,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Strictness: m,
+     Unfolding: ((Foundation.$fPersistEntityAmbiente,
+                  Selects.selectCasaId6
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+0f37a25f6755f3629ea43f2bbb0e801f
+  selectConsumoCasaAno ::
+    GHC.Integer.Type.Integer
+    -> Foundation.Handler [(GHC.Types.Double, GHC.Types.Int)]
+  {- Arity: 3, Strictness: <L,U><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoCasaAno1
+                  `cast`
+                (<GHC.Integer.Type.Integer>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <[(GHC.Types.Double, GHC.Types.Int)]>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N
+                                    <GHC.Types.IO>_N
+                                    <[(GHC.Types.Double, GHC.Types.Int)]>_N))) -}
+98b9e23e2f7b26ab5e71dfc4ed1d4e67
+  selectConsumoCasaAno1 ::
+    GHC.Integer.Type.Integer
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.Types.Double, GHC.Types.Int)] #)
+  {- Arity: 3, Strictness: <L,U><L,U><S,U> -}
+8b266c45b4041278ab97f073bd07ae63
+  selectConsumoCasaDia :: Foundation.Handler GHC.Types.Double
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoCasaDia1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.Sitio>_N <GHC.Types.IO>_N <GHC.Types.Double>_N))) -}
+330cd024f228cd14edb36663e4c6ac35
+  selectConsumoCasaDia1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+dbf4f705653914759c3983a1d8cbf701
+  selectConsumoCasaMes ::
+    Foundation.Handler
+      [(GHC.Types.Double, Data.Time.Calendar.Days.Day)]
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoCasaMes1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <[(GHC.Types.Double, Data.Time.Calendar.Days.Day)]>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.Sitio>_N
+                               <GHC.Types.IO>_N
+                               <[(GHC.Types.Double, Data.Time.Calendar.Days.Day)]>_N))) -}
+cb142e706134eb273925fae1416c7c8d
+  selectConsumoCasaMes1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.Types.Double, Data.Time.Calendar.Days.Day)] #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+c9b6f40393ae944bd6aa53420a11ef5d
+  selectConsumoCasaMesQual ::
+    GHC.Types.Int -> Foundation.Handler GHC.Types.Double
+  {- Arity: 3, Strictness: <L,U(U)><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoCasaMesQual1
+                  `cast`
+                (<GHC.Types.Int>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N <GHC.Types.IO>_N <GHC.Types.Double>_N))) -}
+97b8fa3615da3c93279ee05f87589b41
+  selectConsumoCasaMesQual1 ::
+    GHC.Types.Int
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 3, Strictness: <L,U(U)><L,U><S,U> -}
+f58bcf5063c1d6820570d8cfe47784ed
+  selectConsumoCasaPeriodo ::
+    GHC.Integer.Type.Integer
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Integer.Type.Integer
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Foundation.Handler GHC.Types.Double
+  {- Arity: 8,
+     Strictness: <L,U><L,1*U(U)><L,1*U(U)><L,U><L,1*U(U)><L,1*U(U)><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoCasaPeriodo1
+                  `cast`
+                (<GHC.Integer.Type.Integer>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <GHC.Integer.Type.Integer>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Trans
+                          (<Yesod.Core.Types.HandlerData
+                              Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R))
+                          (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                    <Foundation.Sitio>_N <GHC.Types.IO>_N <GHC.Types.Double>_N))) -}
+d72f17b76e40e1476ab0eefa632a67ca
+  selectConsumoCasaPeriodo1 ::
+    GHC.Integer.Type.Integer
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Integer.Type.Integer
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Yesod.Core.Types.HandlerData
+         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 8,
+     Strictness: <L,U><L,1*U(U)><L,1*U(U)><L,U><L,1*U(U)><L,1*U(U)><L,U><S,U> -}
+3a42355c346477bbd2c7d17b48e4e343
+  selectConsumoCasaSemana ::
+    Foundation.Handler
+      [(GHC.Types.Double, Data.Time.Calendar.Days.Day)]
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectConsumoCasaSemana1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <[(GHC.Types.Double, Data.Time.Calendar.Days.Day)]>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.Sitio>_N
+                               <GHC.Types.IO>_N
+                               <[(GHC.Types.Double, Data.Time.Calendar.Days.Day)]>_N))) -}
+b0f95bad33bf3dc54a30e0b389bba61d
+  selectConsumoCasaSemana1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.Types.Double, Data.Time.Calendar.Days.Day)] #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+8eed91c35df06e3233c0779295661e13
+  selectPreco :: Foundation.Handler GHC.Types.Double
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Selects.selectPreco1
+                  `cast`
+                (Trans
+                     (<Yesod.Core.Types.HandlerData
+                         Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                      ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R))
+                     (Sym (Yesod.Core.Types.N:HandlerT[0]
+                               <Foundation.Sitio>_N <GHC.Types.IO>_N <GHC.Types.Double>_N))) -}
+bc6bc7e55fbfd9d650746a7079b0bf1a
+  selectPreco1 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (r :: Yesod.Core.Types.HandlerData
+                           Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Foundation.$fYesodPersistSitio1
+                        @ (GHC.Base.Maybe
+                             (Database.Persist.Class.PersistEntity.Entity Foundation.Preco))
+                        Selects.selectPreco2
+                          `cast`
+                        (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  (Sub (Foundation.D:R:YesodPersistBackendSitio[0]))
+                                  <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                                  <GHC.Base.Maybe
+                                     (Database.Persist.Class.PersistEntity.Entity
+                                        Foundation.Preco)>_N))
+                        r
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    case ipv1 of wild {
+                      GHC.Base.Nothing -> Data.Maybe.fromJust1 @ GHC.Types.Double
+                      GHC.Base.Just x
+                      -> case x of wild1 { Database.Persist.Class.PersistEntity.Entity $dPersistEntity ds2 ds3 ->
+                         case ds3 of wild2 { Foundation.Preco dt ->
+                         GHC.Types.D# dt } } } #) }) -}
+d83a5a87d7a8d1508fdf07e37ec345dc
+  selectPreco2 ::
+    Database.Persist.Sql.Types.Internal.SqlBackend
+    -> Yesod.Core.Types.HandlerT
+         Foundation.Sitio
+         GHC.Types.IO
+         (GHC.Base.Maybe
+            (Database.Persist.Class.PersistEntity.Entity Foundation.Preco))
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (r1 :: Database.Persist.Sql.Types.Internal.SqlBackend) ->
+                 let {
+                   ds :: Yesod.Core.Types.HandlerT
+                           Foundation.Sitio
+                           GHC.Types.IO
+                           (Data.Acquire.Internal.Acquire
+                              (Data.Conduit.Internal.Conduit.Source
+                                 GHC.Types.IO
+                                 (Database.Persist.Class.PersistEntity.Entity Foundation.Preco)))
+                   = Selects.selectPreco_m1
+                       `cast`
+                     (Control.Monad.Trans.Reader.N:ReaderT[0]
+                          <*>_N
+                          <Database.Persist.Sql.Types.Internal.SqlBackend>_R
+                          <Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO>_R
+                          <Data.Acquire.Internal.Acquire
+                             (Data.Conduit.Internal.Conduit.Source
+                                GHC.Types.IO
+                                (Database.Persist.Class.PersistEntity.Entity Foundation.Preco))>_N)
+                       r1
+                 } in
+                 (\ (r :: Yesod.Core.Types.HandlerData
+                            Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case (ds
+                          `cast`
+                        (Yesod.Core.Types.N:HandlerT[0]
+                             <Foundation.Sitio>_N
+                             <GHC.Types.IO>_N
+                             <Data.Acquire.Internal.Acquire
+                                (Data.Conduit.Internal.Conduit.Source
+                                   GHC.Types.IO
+                                   (Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Preco))>_N)
+                          r)
+                         `cast`
+                       (GHC.Types.N:IO[0]
+                            <Data.Acquire.Internal.Acquire
+                               (Data.Conduit.Internal.Conduit.Source
+                                  GHC.Types.IO
+                                  (Database.Persist.Class.PersistEntity.Entity
+                                     Foundation.Preco))>_R)
+                         s of ds1 { (#,#) ipv ipv1 ->
+                  (Data.Acquire.Internal.with
+                     @ GHC.Types.IO
+                     @ (Data.Conduit.Internal.Conduit.Source
+                          GHC.Types.IO
+                          (Database.Persist.Class.PersistEntity.Entity Foundation.Preco))
+                     @ (GHC.Base.Maybe
+                          (Database.Persist.Class.PersistEntity.Entity Foundation.Preco))
+                     Control.Monad.Trans.Control.$fMonadBaseControlIOIO
+                     ipv1
+                     (Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend1
+                        @ Foundation.Preco)
+                       `cast`
+                     (<Data.Conduit.Internal.Conduit.Source
+                         GHC.Types.IO
+                         (Database.Persist.Class.PersistEntity.Entity Foundation.Preco)>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <GHC.Base.Maybe
+                                       (Database.Persist.Class.PersistEntity.Entity
+                                          Foundation.Preco)>_R)))
+                    `cast`
+                  (GHC.Types.N:IO[0]
+                       <GHC.Base.Maybe
+                          (Database.Persist.Class.PersistEntity.Entity Foundation.Preco)>_R)
+                    ipv })
+                   `cast`
+                 (Trans
+                      (<Yesod.Core.Types.HandlerData
+                          Foundation.Sitio (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <GHC.Base.Maybe
+                                        (Database.Persist.Class.PersistEntity.Entity
+                                           Foundation.Preco)>_R))
+                      (Sym (Yesod.Core.Types.N:HandlerT[0]
+                                <Foundation.Sitio>_N
+                                <GHC.Types.IO>_N
+                                <GHC.Base.Maybe
+                                   (Database.Persist.Class.PersistEntity.Entity
+                                      Foundation.Preco)>_N)))) -}
+f18fcdb70fec3d2d896a12e5245e1d91
+  selectPreco3 ::
+    [Database.Persist.Class.PersistEntity.SelectOpt Foundation.Preco]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (Database.Persist.Class.PersistEntity.SelectOpt Foundation.Preco)
+                   (Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend5
+                      @ Foundation.Preco)
+                   (GHC.Types.[]
+                      @ (Database.Persist.Class.PersistEntity.SelectOpt
+                           Foundation.Preco))) -}
+0588054dc3306ef90dbf7818389c62d1
+  selectPreco4 ::
+    [Database.Persist.Class.PersistEntity.Filter Foundation.Preco]
+  {- Unfolding: (GHC.Types.:
+                   @ (Database.Persist.Class.PersistEntity.Filter Foundation.Preco)
+                   Selects.selectPreco5
+                   (GHC.Types.[]
+                      @ (Database.Persist.Class.PersistEntity.Filter
+                           Foundation.Preco))) -}
+4a860a38896fc5db0f475884a9c6b61e
+  selectPreco5 ::
+    Database.Persist.Class.PersistEntity.Filter Foundation.Preco
+  {- Unfolding: (Database.Persist.Class.PersistEntity.Filter
+                   @ Foundation.Preco
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Preco)
+                   Foundation.$fPersistFieldKey0
+                   Foundation.$fPersistEntityPreco_$s$WPrecoId
+                   Selects.selectPreco6
+                   Database.Persist.Types.Base.Eq) -}
+4e1d2d3ad38404a345fd6d30175ade56
+  selectPreco6 ::
+    Data.Either.Either
+      (Database.Persist.Class.PersistEntity.Key Foundation.Preco)
+      [Database.Persist.Class.PersistEntity.Key Foundation.Preco]
+  {- HasNoCafRefs,
+     Unfolding: (Data.Either.Left
+                   @ (Database.Persist.Class.PersistEntity.Key Foundation.Preco)
+                   @ [Database.Persist.Class.PersistEntity.Key Foundation.Preco]
+                   Selects.selectPreco7
+                     `cast`
+                   (Trans
+                        (Sym (Database.Persist.Sql.Orphan.PersistStore.N:R:BackendKeySqlBackend[0]))
+                        (Trans
+                             (Sym (Database.Persist.Sql.Orphan.PersistStore.D:R:BackendKeySqlBackend0[0]))
+                             (Trans
+                                  (Sym (Foundation.N:R:KeyPreco[0]))
+                                  (Sym (Foundation.D:R:KeyPreco0[0])))))) -}
+6d3adff09a9e18b06c6f66c5854fd781
+  selectPreco7 :: GHC.Int.Int64
+  {- HasNoCafRefs, Unfolding: (GHC.Int.I64# 0#) -}
+ce4bde735999a3f008ab4de8aaeb3f88
+  selectPreco8 ::
+    (Database.Persist.Class.PersistEntity.PersistEntity
+       Foundation.Preco,
+     Database.Persist.Sql.Types.Internal.SqlBackend
+     Data.Type.Equality.~ Database.Persist.Sql.Types.Internal.SqlBackend)
+  {- Unfolding: ((Foundation.$fPersistEntityPreco,
+                  Selects.selectCasaId6
+                    `cast`
+                  (Sym (Data.Type.Equality.N:~[0]
+                            <*>_N) <Database.Persist.Sql.Types.Internal.SqlBackend>_N <Database.Persist.Sql.Types.Internal.SqlBackend>_N))) -}
+cfa37daf320e9bf0f463d66febd65e99
+  selectPreco_m1 ::
+    Control.Monad.Trans.Reader.ReaderT
+      Database.Persist.Sql.Types.Internal.SqlBackend
+      (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+      (Data.Acquire.Internal.Acquire
+         (Data.Conduit.Internal.Conduit.Source
+            GHC.Types.IO
+            (Database.Persist.Class.PersistEntity.Entity Foundation.Preco)))
+  {- Unfolding: (Database.Persist.Sql.Orphan.PersistQuery.$fPersistQueryReadSqlBackend_$cselectSourceRes
+                   @ Foundation.Preco
+                   @ (Yesod.Core.Types.HandlerT Foundation.Sitio GHC.Types.IO)
+                   @ GHC.Types.IO
+                   Selects.selectPreco8
+                     `cast`
+                   (GHC.Classes.(%,%)
+                      <Database.Persist.Class.PersistEntity.PersistEntity
+                         Foundation.Preco>_N
+                      ((Data.Type.Equality.~)
+                         <*>_N
+                         (Sym (Foundation.D:R:PersistEntityBackendPreco[0]))
+                         (Sym (Database.Persist.Sql.Types.Internal.D:R:BaseBackendSqlBackend[0])))_N)_R
+                   (Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+                      @ Foundation.Sitio)
+                   Control.Monad.IO.Class.$fMonadIOIO
+                   Selects.selectPreco4
+                   Selects.selectPreco3) -}
+"SPEC/Selects $fApplicativeHandlerT_$creturn @ IO _" [ALWAYS] forall @ site
+                                                                     ($dMonad :: GHC.Base.Monad
+                                                                                   GHC.Types.IO)
+  Yesod.Core.Types.$fApplicativeHandlerT_$creturn @ GHC.Types.IO
+                                                  @ site
+                                                  $dMonad
+  = Selects.$s$fApplicativeHandlerT_$creturn @ site
+"SPEC/Selects $fMonadHandlerHandlerT @ IO _" [ALWAYS] forall @ site
+                                                             ($d(%,,,,%) :: Control.Monad.Trans.Resource.MonadResourceBase
+                                                                              GHC.Types.IO)
+  Yesod.Core.Class.Handler.$fMonadHandlerHandlerT @ GHC.Types.IO
+                                                  @ site
+                                                  $d(%,,,,%)
+  = Selects.$s$fMonadHandlerHandlerT @ site
+"SPEC/Selects $fMonadHandlerT @ IO _" [ALWAYS] forall @ site
+                                                      ($dMonad :: GHC.Base.Monad GHC.Types.IO)
+  Yesod.Core.Types.$fMonadHandlerT @ GHC.Types.IO @ site $dMonad
+  = Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT
+      @ site
+"SPEC/Selects $fMonadHandlerT_$cfail @ IO _" [ALWAYS] forall @ site
+                                                             ($dMonad :: GHC.Base.Monad
+                                                                           GHC.Types.IO)
+  Yesod.Core.Types.$fMonadHandlerT_$cfail @ GHC.Types.IO
+                                          @ site
+                                          $dMonad
+  = Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadHandlerT_$cfail
+      @ site
+"SPEC/Selects $fMonadIOHandlerT @ IO _" [ALWAYS] forall @ site
+                                                        ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                        GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT @ GHC.Types.IO @ site $dMonadIO
+  = Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT
+      @ site
+"SPEC/Selects $fMonadIOHandlerT_$cliftIO @ IO _" [ALWAYS] forall @ site
+                                                                 ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                 GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT_$cliftIO @ GHC.Types.IO
+                                              @ site
+                                              $dMonadIO
+  = Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cliftIO
+      @ site
+"SPEC/Selects $fMonadIOHandlerT_$cp1MonadLogger @ IO _" [ALWAYS] forall @ site
+                                                                        ($dMonadIO :: Control.Monad.IO.Class.MonadIO
+                                                                                        GHC.Types.IO)
+  Yesod.Core.Types.$fMonadIOHandlerT_$cp1MonadLogger @ GHC.Types.IO
+                                                     @ site
+                                                     $dMonadIO
+  = Selects.$s$fMonadHandlerHandlerT_$cp1MonadHandler_$s$fMonadIOHandlerT_$cp1MonadLogger
+      @ site
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

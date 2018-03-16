@@ -1,0 +1,52 @@
+name:              prjOhms
+version:           0.0.0
+cabal-version:     >= 1.8
+build-type:        Simple
+
+executable         prjOhms
+    hs-source-dirs: src
+
+    main-is:           ../Main.hs
+
+    ghc-options:       -threaded -O2 -rtsopts -with-rtsopts=-N
+
+    extensions: TemplateHaskell
+                QuasiQuotes
+                OverloadedStrings
+                CPP
+                MultiParamTypeClasses
+                TypeFamilies
+                GADTs
+                GeneralizedNewtypeDeriving
+                FlexibleContexts
+                FlexibleInstances
+                EmptyDataDecls
+                NoMonomorphismRestriction
+                DeriveDataTypeable
+                ViewPatterns
+                TupleSections
+                RecordWildCards
+
+    build-depends: base                          
+                 , yesod                         
+                 , yesod-auth                    
+                 , yesod-static                 
+                 , yesod-form                    
+                 , bytestring      
+                 , http-types
+                 , text                          
+                 , persistent                    
+                 , persistent-postgresql         
+                 , monad-logger
+                 , shakespeare
+                 , time
+                 , blaze-html
+    
+    other-modules: Application
+                   Foundation
+                   Usuario
+                   Login
+                   Selects
+                   Preco
+                   Ambiente
+                   Consumo

@@ -1,0 +1,42 @@
+<nav .navbar .navbar-default role="navigation">
+    <div .container>
+        <div .row>
+            <div .col-md-3>
+                <div .navbar-header>
+                    <a .navbar-brand href="#">
+                    <button type="button" .navbar-toggle data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span .sr-only>Toggle navigation
+                        <span .icon-bar>
+                        <span.icon-bar>
+                        <span .icon-bar>
+            <div .col-md-9>
+                <div .collapse .navbar-collapse id="bs-example-navbar-collapse-1">
+                    <ul .nav .navbar-nav .menu>
+                        <li>
+                            <a href=@{ConsumoCasaR}>Consumo
+                        <li>
+                            <a href=@{CriarAmbienteR}><span .glyphicon .glyphicon-stats> Ambientes
+                        <li>
+                            <a href=@{CriarAutorizadoR}><span .glyphicon .glyphicon-home> Usuários
+                       
+                    <ul .nav .navbar-nav .navbar-right>
+                        <li>
+                          <form action=@{LogoutR} method=post>
+                            <button .btn .btn-primary type="submit">Logout
+<div .container>
+    <div .col-sm-12>
+        <div .page-header> 
+            <h1>Cadastrar Usuario Autorizado <small>(Preencha os campos)
+            <a .btn .btn-default href=@{ListarUsuarioR}>Listar usuários
+      <div .col-sm-6>
+            <div .form-group>
+                <form method=post enctype=#{enctype} action=@{AlterarUsuarioR usuario}>
+                    ^{widget}
+                    <button type="submit" .btn .btn-default>Salvar
+        
+      <div .col-sm-6>
+          <div .form-group>
+              <h4 .text-center>Usuários cadastrados <small>clique para vizualisar 
+              <ul .list-group>
+                  $forall Entity uid usuario <- listaUsu
+                      <li .text-center .list-group-item><h4><a href=@{AlterarUsuarioR uid}> #{usuarioNmUsuario usuario} 

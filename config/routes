@@ -1,0 +1,42 @@
+/                                   HomeR               GET POST
+
+/login                              LoginR              GET POST
+/logout                             LogoutR             POST
+
+/pag2/#Int/#Int/#PrecoId/#AmbienteId  ArduinoConsumoR             GET
+/arduino/consumo                    ConsumoR            POST
+
+/alterar/preco                      PrecoR              GET POST
+
+/autorizado/criar                   CriarAutorizadoR    GET POST
+/usuario/listar                     ListarUsuarioR      GET
+/usuario/deletar/#UsuarioId         ApagarUsuarioR      POST
+/usuario/alterar/#UsuarioId         AlterarUsuarioR     GET POST
+
+/consumo/deletar/#AmbienteId        ConsumoAmbienteR     POST
+/consumo                            ConsumoCasaR         GET
+/consumo/mensal                     ConsumoCasaMensalR   GET
+/consumo/diario                     ConsumoCasaDiarioR   GET
+/consumo/semanal                    ConsumoCasaSemanalR  GET
+
+/consumo/pick/#Integer/#Int/#Int/#Integer/#Int/#Int     ConsumoCasaPickR     GET
+
+
+/ambiente/criar                     CriarAmbienteR      GET POST
+/ambiente/listar                    ListarAmbienteR     GET
+
+
+/ambiente/consumo/#AmbienteId/diario      ConsumoAmbienteDiarioR       GET
+/ambiente/consumo/#AmbienteId/mensal      ConsumoAmbienteMensalR       GET
+/ambiente/consumo/#AmbienteId/semanal     ConsumoAmbienteSemanalR      GET
+
+/ambiente/consumo/#AmbienteId             BuscarAmbienteR        GET
+/ambiente/deletar/#AmbienteId             ApagarAmbienteR        POST
+/ambiente/alterar/#AmbienteId             AlterarAmbienteR       GET POST
+
+/static                             StaticR             Static getStatic
+
+/relatorio                                 RelatorioR              GET
+/relatorio/mensal                          RelatorioMensalR        GET
+/relatorio/diario                          RelatorioDiarioR        GET
+/relatorio/semanal                         RelatorioSemanalR       GET

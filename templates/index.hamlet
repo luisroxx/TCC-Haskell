@@ -1,0 +1,20 @@
+<div .container>
+    <div .col-sm-5>
+      <h1>Bem-vindo<small> Sistema de gerenciamento de energia elétrica</small><col .pg-empty-placeholder> 
+      <div .form-group>
+        <a href=@{LoginR}>
+          <button .btn .btn-primary type="submit">Login
+
+    <div .col-sm-1>
+  
+    <div .col-sm-4>
+      <div .well>
+        <h4>Novo usuário?<small> Cria sua conta para começar 
+
+        <div .form-group>
+          <form method=post enctype=#{enctype} action=@{HomeR}>
+              ^{widget}
+              <button type="submit" .btn .btn-default>Cadastrar
+              
+            
+  

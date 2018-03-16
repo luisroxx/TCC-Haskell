@@ -1,0 +1,90 @@
+var ctx = document.getElementById("consumoMensal").getContext('2d');
+
+
+var weekday = new Array(7);
+weekday[0] =  "Domingo";
+weekday[1] = "Segunda";
+weekday[2] = "Terça";
+weekday[3] = "Quarta";
+weekday[4] = "Quinta";
+weekday[5] = "Sexta";
+weekday[6] = "Sábado";
+
+var consumo = #{toJSON consumo};
+var datas = [];
+var labels = [];
+var days = [];
+
+
+for (i = 0; i < consumo.length; i++) { 
+    labels.push(consumo[i][1]);
+    datas.push(consumo[i][0]);
+}
+
+
+for (i = 0; i < labels.length; i++) { 
+
+    for (y = 0; y < labels.length; y++) { 
+
+        if(i != y){
+            
+            if(labels[i] == labels[y]){
+                labels.splice(y, 1)
+                datas[i] += datas[y];
+                datas.splice(y, 1)
+                console.log('as');
+            } 
+        }
+    }
+        
+}
+
+for (i = 0; i < labels.length; i++) { 
+    var d = new Date(labels[i]);
+    console.log('Data: ' + d);
+    var n = weekday[d.getDay()];
+    console.log('Day: ' + n);
+    days.push(n);
+}
+
+
+console.log(consumo);
+console.log(labels);
+console.log(datas);
+
+var consumoMensal = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: days,
+        datasets: [{
+            label: 'Consumo por dia',
+            data: datas,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});

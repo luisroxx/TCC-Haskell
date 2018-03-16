@@ -1,0 +1,58 @@
+<nav .navbar .navbar-default role="navigation">
+    <div .container>
+        <div .row>
+            <div .col-md-3>
+                <div .navbar-header>
+                    <a .navbar-brand href="#">
+                    <button type="button" .navbar-toggle data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span .sr-only>Toggle navigation
+                        <span .icon-bar>
+                        <span.icon-bar>
+                        <span .icon-bar>
+            <div .col-md-9>
+                <div .collapse .navbar-collapse id="bs-example-navbar-collapse-1">
+                    <ul .nav .navbar-nav .menu>
+                        <li>
+                            <a href=@{ConsumoCasaR}>Consumo
+                        <li>
+                            <a href=@{ListarAmbienteR}><span .glyphicon .glyphicon-stats> Ambientes
+                        <li>
+                            <a href=@{ListarUsuarioR}><span .glyphicon .glyphicon-home> Usuários
+                       
+                    <ul .nav .navbar-nav .navbar-right>
+                        <li>
+                          <form action=@{LogoutR} method=post>
+                            <button .btn .btn-primary type="submit">Logout
+                            
+
+
+<div .container>
+    <div .col-sm-12>
+        <div .page-header> 
+            <h1>Consumo <small>(Selecione a data desejada para consulta)
+    
+        <div .col-sm-3>
+            <div .form-group .text-center>
+                <div .input-group .date #datetimepicker6>
+                    <input type="date" .form-control />
+                    <span .input-group-addon>
+                        <span .glyphicon .glyphicon-calendar>
+        
+        <div .col-sm-3>
+            <div .form-group text-center>
+                <div .input-group .date #datetimepicker7>
+                    <input type="date" .form-control />
+                    <span .input-group-addon>
+                        <span .glyphicon .glyphicon-calendar>
+          
+        <div .col-sm-6>
+            <div .form-group .text-center>
+                <div .btn-group> 
+                    <a .btn .btn-default href=@{ConsumoCasaDiarioR}>Diário
+                    <a .btn .btn-default href=@{ConsumoCasaSemanalR}>Semanal
+                    <a .btn .btn-default href=@{ConsumoCasaMensalR}>Mensal
+                    <a .btn .btn-default href=@{ConsumoCasaR}>Anual
+
+        <div .form-group> 
+            <div .box-chart>
+                <canvas #consumoMensal style="width:100%;"></canvas>

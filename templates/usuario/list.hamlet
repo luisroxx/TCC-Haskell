@@ -1,0 +1,57 @@
+<nav .navbar .navbar-default role="navigation">
+    <div .container>
+        <div .row>
+            <div .col-md-3>
+                <div .navbar-header>
+                    <a .navbar-brand href="#">
+                    <button type="button" .navbar-toggle data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span .sr-only>Toggle navigation
+                        <span .icon-bar>
+                        <span.icon-bar>
+                        <span .icon-bar>
+            <div .col-md-9>
+                <div .collapse .navbar-collapse id="bs-example-navbar-collapse-1">
+                    <ul .nav .navbar-nav .menu>
+                        <li>
+                            <a href=@{ConsumoCasaR}>Consumo
+                        <li>
+                            <a href=@{ListarAmbienteR}><span .glyphicon .glyphicon-stats> Ambientes
+                        <li>
+                            <a href=@{ListarUsuarioR}><span .glyphicon .glyphicon-home> Usuários
+                       
+                    <ul .nav .navbar-nav .navbar-right>
+                        <li>
+                          <form action=@{LogoutR} method=post>
+                            <button .btn .btn-primary type="submit">Logout
+<div .container>
+     $maybe msg <- msgComMaybe 
+         <div  #message .alert .alert-success>
+            #{msg}
+    <div .col-sm-12>
+        <div .page-header> 
+            <h1>Usuários <small>(Clique para alterar usuário)<col .pg-empty-placeholder> 
+            <a .btn .btn-default href=@{CriarAutorizadoR}>Novo Usuário
+    
+    <div .col-sm-4>
+        <div .form-group>
+            <input type="email" .form-control id="exampleInputEmail1" placeholder="Buscar usuário"> 
+        <div .form-group .text-right>
+            <button type="submit" .btn>Buscar  
+    
+    
+    <div .col-sm-8>
+       <div .form-group>              
+            <table .table .table-bordered>
+                <thead>
+                  <tr>
+                    <th>Nome do Usuário
+                    <th>Ação
+        
+                <tbody>
+                    $forall Entity uid usuario <- listaUsu
+                      <tr>
+                        <td>#{usuarioNmUsuario usuario} 
+                        <td>
+                          <form method=post action=@{ApagarUsuarioR uid}> 
+                            <input .btn .btn-danger type="submit" onclick="return confirm('Tem certeza que deseja excluir o usuário #{usuarioNmUsuario usuario}?')" value="Deletar">
+                            <a .btn .btn-default href=@{AlterarUsuarioR uid}>Editar

@@ -1,0 +1,57 @@
+<nav .navbar .navbar-default role="navigation">
+    <div .container>
+        <div .row>
+            <div .col-md-3>
+                <div .navbar-header>
+                    <a .navbar-brand href="#">
+                    <button type="button" .navbar-toggle data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span .sr-only>Toggle navigation
+                        <span .icon-bar>
+                        <span.icon-bar>
+                        <span .icon-bar>
+            <div .col-md-9>
+                <div .collapse .navbar-collapse id="bs-example-navbar-collapse-1">
+                    <ul .nav .navbar-nav .menu>
+                        <li>
+                            <a href=@{ConsumoCasaR}>Consumo
+                        <li>
+                            <a href=@{ListarAmbienteR}><span .glyphicon .glyphicon-stats> Ambientes
+                        <li>
+                            <a href=@{CriarAutorizadoR}><span .glyphicon .glyphicon-home> Usuários
+                       
+                    <ul .nav .navbar-nav .navbar-right>
+                        <li>
+                          <form action=@{LogoutR} method=post>
+                            <button .btn .btn-primary type="submit">Logout
+
+<div .container>
+   <div .col-sm-12>
+      <div .page-header> 
+        <h1>Ambientes <small>(Clique para visualizar)
+        <a .btn .btn-default href=@{CriarAmbienteR}>Novo Ambiente
+     $maybe msg <- msgComMaybe 
+         <div  #message .alert .alert-success>
+            #{msg}
+    <div .col-sm-4>
+      <div .form-group>
+        <input type="email" .form-control id="exampleInputEmail1" placeholder="Buscar ambiente"> 
+      <div .form-group .text-right>
+        <button type="submit" .btn>Buscar
+    
+    <div .col-sm-8>
+      <div .form-group>              
+        <table .table .table-bordered .text-center>
+            <thead>
+              <tr .text-center>
+                <th>Nome do Ambiente
+                <th>Ação
+            <tbody>
+                $forall Entity aid ambiente <- listaAmb
+                  <tr>
+                    <td><a href=@{BuscarAmbienteR aid}> #{ambienteNmAmbiente ambiente} 
+                    <td>
+                      <form method=post action=@{ApagarAmbienteR aid}> 
+                        <input .btn .btn-danger type="submit" onclick="return confirm('Tem certeza que deseja excluir o ambiente #{ambienteNmAmbiente ambiente}?')" value="Deletar">
+                        <a .btn .btn-default href=@{BuscarAmbienteR aid}>Visualizar
+                        <a .btn .btn-default href=@{AlterarAmbienteR aid}>Editar
+

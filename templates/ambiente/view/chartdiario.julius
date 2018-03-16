@@ -1,0 +1,35 @@
+var ctx = document.getElementById("consumoMensal").getContext('2d');
+
+
+var consumo = #{toJSON consumo};
+
+console.log(consumo);
+
+
+var consumoMensal = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Dia'],
+        datasets: [{
+            label: 'Consumo do dia de hoje',
+            data: [consumo],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)'
+
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
